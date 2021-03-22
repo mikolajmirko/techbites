@@ -11,11 +11,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#635ACF',
-        secondary: '#FF6584',
-        dark: '#3F3D56',
-        accent: '#FFB43B',
-        white: '#F7FAFC',
+        primary: '#2d69ff',
+        secondary: '#ffb43b',
+        dark: '#3f3d56',
+        accent: '#ec4899',
+        white: '#f7fafc',
+        black: '#0a0a0a',
+        transparent: 'transparent',
         gray: {
           100: '#f7fafc',
           200: '#edf2f7',
@@ -26,8 +28,7 @@ module.exports = {
           700: '#4a5568',
           800: '#2d3748',
           900: '#1a202c',
-        },
-        transparent: 'transparent'
+        }
       },
       fontFamily: {
         sans: ['Inter', 'Arial', 'sans-serif']
