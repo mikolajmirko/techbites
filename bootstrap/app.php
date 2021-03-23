@@ -29,7 +29,7 @@ collect(['helpers', 'setup', 'filters', 'admin'])
     ->each(function ($file) {
         if (! locate_template($file = "app/{$file}.php", true, true)) {
             wp_die(
-                sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file)
+                sprintf(__('Error locating <code>%s</code> for inclusion.', 'tb'), $file)
             );
         }
     });

@@ -44,8 +44,7 @@ class Post extends Composer
             if ($home = get_option('page_for_posts', true)) {
                 return get_the_title($home);
             }
-
-            return __('Latest Posts', 'sage');
+            return __('Latest Bites', 'tb');
         }
 
         if (is_archive()) {
@@ -53,15 +52,14 @@ class Post extends Composer
         }
 
         if (is_search()) {
-            /* translators: %s is replaced with the search query */
             return sprintf(
-                __('Search Results for %s', 'sage'),
+                __('Search Results for %s', 'tb'),
                 get_search_query()
             );
         }
 
         if (is_404()) {
-            return __('Not Found', 'sage');
+            return __('Not Found', 'tb');
         }
 
         return get_the_title();

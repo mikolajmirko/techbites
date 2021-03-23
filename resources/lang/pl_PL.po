@@ -1,0 +1,116 @@
+# Copyright (C) 2021 Mikolaj Mirko
+# This file is distributed under the MIT License.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tasty bites 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/techbites\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-03-23T14:22:26+00:00\n"
+"PO-Revision-Date: 2021-03-23 15:30+0100\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"Language: pl_PL\n"
+
+#. Theme Name of the theme
+msgid "Tasty bites"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Base theme for TechBites website. Theme includes high-contrast mode and is "
+"integrated with Polylang multi language plugin system. Editing parts of this "
+"theme is not adviceable."
+msgstr ""
+
+#. Author of the theme
+msgid "Mikolaj Mirko"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.linkedin.com/in/mikolaj-mirko/"
+msgstr ""
+
+#: app/filters.php:15
+msgid "Continued"
+msgstr "Więcej"
+
+#: app/setup.php:67
+msgid "Primary Navigation"
+msgstr "Nawigacja główna"
+
+#: app/setup.php:68
+msgid "Discover Navigation"
+msgstr "Nawigacja Odkrywaj"
+
+#: app/setup.php:69
+msgid "Bottom Navigation"
+msgstr "Nawigacja dolna"
+
+#: app/View/Composers/Post.php:47
+msgid "Latest Bites"
+msgstr "Ostatnie gryzki"
+
+#: app/View/Composers/Post.php:56
+msgid "Search Results for %s"
+msgstr "Wyniki wyszukiwania dla %s"
+
+#: app/View/Composers/Post.php:62
+msgid "Not Found"
+msgstr "Nie znaleziono"
+
+#: bootstrap/app.php:32
+msgid "Error locating <code>%s</code> for inclusion."
+msgstr "Błąd przy próbie załadowania pliku %s."
+
+#: functions.php:15
+msgid "Error locating autoloader. Please run <code>composer install</code>."
+msgstr ""
+"Błąd przy próbie załadowania automatycznego. Użyj polecenia <code>composer "
+"install</code>."
+
+#. Template Name of the theme
+msgid "Custom Template"
+msgstr "Niestandardowy szablon"
+
+#: storage/framework/views/4c9bd2b8eb9554292b21b4123dc7e5d4a0130ae6.php:6
+#: storage/framework/views/717ce6bbd7b97f46a6e5efe6ed1be248a09f6a0b.php:13
+msgid "Sorry, but the page you are trying to view does not exist."
+msgstr "Strona, którą próbujesz wyświetlić, nie istnieje."
+
+#: storage/framework/views/5b1642393fdbe406b059fe1600cd7b520f8b5d8b.php:4
+#: storage/framework/views/738088bb44aca2fee929e5165369e7c34dc640b2.php:4
+msgctxt "label"
+msgid "Search for:"
+msgstr "Wyszukaj:"
+
+#: storage/framework/views/5b1642393fdbe406b059fe1600cd7b520f8b5d8b.php:11
+#: storage/framework/views/738088bb44aca2fee929e5165369e7c34dc640b2.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Szukaj &hellip;"
+
+#: storage/framework/views/5b1642393fdbe406b059fe1600cd7b520f8b5d8b.php:20
+#: storage/framework/views/738088bb44aca2fee929e5165369e7c34dc640b2.php:18
+msgctxt "submit button"
+msgid "Search"
+msgstr "Szukaj"
+
+#: storage/framework/views/35d428189c5c13d7b7f7683cbf26ddc9f65b5a43.php:9
+#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:6
+#: storage/framework/views/efd7d8d90cd97bd2bdcaa596f3d01b94a00e145a.php:13
+msgid "Sorry, no results were found."
+msgstr "Nie znaleziono żadnych wyników."
+
+#: storage/framework/views/93734e9c372a9a79d70ac8b6a3988bdffd7134c1.php:7
+msgid "By"
+msgstr ""
+
+#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:2
+#: storage/framework/views/ede90663c87a1e4b243b42c68295aedafcdbf471.php:4
+msgid "Skip to content"
+msgstr "Przejdź do treści"
