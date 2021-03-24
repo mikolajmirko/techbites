@@ -4,6 +4,9 @@
 import 'jquery';
 import 'alpinejs';
 
+/**
+ * Check before page load if high contrast mode is set
+ */
 var mainDocument = $("body");
 if (('theme' in localStorage) && localStorage.theme === 'dark') {
   mainDocument.addClass("dark");
@@ -19,15 +22,16 @@ $(function() {
     const scroll = $(window).scrollTop();
     if (scroll >= 50) {
       stickyHeader.addClass("scrolledHeader");
-      goUpButton.removeClass("-bottom-12 no-sr-only").attr('aria-hidden', 'false');
+      goUpButton.removeClass("-bottom-12").attr('aria-hidden', 'false');
     } else {
       stickyHeader.removeClass("scrolledHeader");
-      goUpButton.addClass("-bottom-12 no-sr-only").attr('aria-hidden', 'true');
+      goUpButton.addClass("-bottom-12").attr('aria-hidden', 'true');
     }
   });
 
   if($(window).scrollTop() > 0) {
     stickyHeader.addClass("scrolledHeader");
+    goUpButton.removeClass("-bottom-12").attr('aria-hidden', 'false');
   }
 
   /**
@@ -41,7 +45,6 @@ $(function() {
   /**
    * Apply high contrast theme mode saved in local Storage
    */
-
   $('.highContrastModeToggle').on('click', function() {
     if (('theme' in localStorage) && localStorage.theme === 'dark') {
       localStorage.theme = 'classic';

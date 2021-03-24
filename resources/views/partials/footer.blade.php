@@ -13,8 +13,8 @@
     <div class="text-gray-400 text-md text-center my-2">
       © {{{ date('Y') }}} {{{ $siteName }}}
     </div>
-    <div id="goUpButton" class="fixed right-4 bottom-4 -bottom-12 no-sr-only" aria-hidden="true" x-data="{ goUpOpen: false }">
-      <button x-on:mouseenter="goUpOpen = true" x-on:mouseleave="goUpOpen = false" x-on:focusin="goUpOpen = true" x-on:focusout="goUpOpen = false" type="button" class="rounded-md p-2 mr-2 inline-flex items-center justify-center text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white">
+    <div id="goUpButton" class="fixed right-4 bottom-4 -bottom-12" aria-hidden="true" x-data="{ goUpOpen: false }">
+      <button x-on:mouseenter="goUpOpen = true" x-on:mouseleave="goUpOpen = false" x-on:focusin="goUpOpen = true" x-on:focusout="goUpOpen = false" type="button" class="rounded-md p-2 mr-2 inline-flex items-center justify-center text-white bg-primary dark:bg-accent hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white">
         <span class="sr-only">{{{ __('Back to top', 'tb') }}}</span>
         @include('icon::arrow', ['classes' => 'h-7 w-7'])
       </button>

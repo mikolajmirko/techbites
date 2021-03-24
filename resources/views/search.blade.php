@@ -4,7 +4,7 @@
   @include('partials.page-header')
 
   @if (! have_posts())
-    <p>
+    <p class="text-center">
       {{{ __('Sorry, no results were found.', 'tb') }}}
     <p>
   @endif

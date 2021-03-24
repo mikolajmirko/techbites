@@ -36,8 +36,8 @@
   </div>
 @else
   @foreach ($sublanguage->get_languages() as $language)
-    {!! $isCurrent = $sublanguage->current_language->post_name == $language->post_name; !!}
-    <a href="{{{ $sublanguage->get_translation_link($language) }}}" class="inline-flex items-center text-gray-700 hover:bg-gray-50 rounded-sm hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 py-2 px-3 @if ($isCurrent) font-bold @endif" role="menuitem" aria-current="@if ($isCurrent) true @else false @endif">
+    <?php $isCurrent = $sublanguage->current_language->post_name == $language->post_name; ?>
+    <a href="{{{ $sublanguage->get_translation_link($language) }}}" class="inline-flex items-center text-gray-700 hover:bg-gray-50 rounded-sm hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent py-2 px-3 @if ($isCurrent) font-bold @endif" role="menuitem" aria-current="@if ($isCurrent) true @else false @endif">
       @include('icon::flags.' . $language->post_name,  ['classes' => 'w-5 mr-3 border border-gray-300'])
       {{{ $language->post_title }}}
     </a>

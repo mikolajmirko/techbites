@@ -10,13 +10,13 @@
 @endif
 
   <form action="{{{ home_url('/') }}}" role="search" method="get">
-    <label for="searchField" class="pb-2 text-sm">
+    <label for="searchField-{{$variant}}" class="pb-2 text-sm">
       {{{ __('Search for bites', 'tb') }}}
     </label>
     <div class="flex items-center search-form">
       <input type="hidden" name="post_type" value="post" />
       <input type="hidden" name="cat" value="-7" />
-      <input id="searchField" x-ref="searchField" type="search" name="s" placeholder="{{{ __('Search...', 'tb') }}}" value="{{{ get_search_query() }}}" class="flex-grow w-4/5 mr-2 focus:outline-none shadow-md border-2 border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-accent rounded-md h-12 px-4">
+      <input id="searchField-{{$variant}}" x-ref="searchField" type="search" name="s" placeholder="{{{ __('Search...', 'tb') }}}" value="{{{ get_search_query() }}}" class="flex-grow w-4/5 mr-2 focus:outline-none shadow-md border-2 border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-accent rounded-md h-12 px-4 dark:placeholder-black">
       <button type="submit" class="flex w-12 h-12 justify-center items-center shadow-md rounded-md text-white bg-blue-600 dark:bg-accent hover:bg-blue-700 dark:hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-accent">
         @include('icon::search', ['classes' => 'h-6 w-6'])
       </button>

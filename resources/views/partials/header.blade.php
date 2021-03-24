@@ -88,13 +88,13 @@
         </div>
         {{-- Discover categories --}}
         <div class="pt-4 pb-4 px-6">
-          <nav class="grid grid-cols-2 gap-y-1 gap-x-4">
+          <nav class="grid grid-cols-1 sm:grid-cols-2 gap-y-1 gap-x-4">
             @foreach (wp_get_nav_menu_items(32) as $menu_item)
               <?php
                 $category = get_category($menu_item->object_id);
               ?>
-              <a role="listitem" href="{{ get_category_link($category) }}" class="p-3 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-accent">
-                @include('icon::process.' . $category->slug, ['classes' => 'flex-shrink-0 h-8 w-8 text-primary dark:text-accent transition'])
+              <a role="listitem" href="{{ get_category_link($category) }}" class="py-1 px-2 sm:py-3 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-accent">
+                @include('icon::process.' . $category->slug, ['classes' => 'flex-shrink-0 h-6 w-6 sm:h-8 sm:w-8 text-primary dark:text-accent transition'])
                 <span class="ml-3 text-base font-medium text-gray-900">
                   {{{ $category->name }}}
                 </span>
@@ -104,18 +104,18 @@
         </div>
         {{-- The rest of naviagtion & search --}}
         <div class="py-4 px-6 space-y-6">
-          <div class="grid grid-cols-2 gap-y-4 gap-x-4">
-            <a href="{{ get_permalink(54) }}" class="p-3 py-1 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent">
-              @include('icon::catalog', ['classes' => 'text-blue-600 ml-1 h-5 w-5 dark:text-accent'])
-              <span class="ml-4 mb-1 whitespace-nowrap">{{{ get_the_title(54) }}}</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-1 gap-x-4">
+            <a href="{{ get_permalink(54) }}" class="py-1 px-2 sm:py-3 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent">
+              @include('icon::catalog', ['classes' => 'text-blue-600 ml-1 h-4 w-4 sm:h-5 sm:w-5 dark:text-accent'])
+              <span class="ml-4 text-base font-medium whitespace-nowrap">{{{ get_the_title(54) }}}</span>
             </a>
-            <a href="{{ get_permalink(45) }}" class="p-3 py-1 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent">
-              @include('icon::about', ['classes' => 'text-blue-600 ml-1 h-5 w-5 dark:text-accent'])
-              <span class="ml-4 mb-1 whitespace-nowrap">{{{ get_the_title(45) }}}</span>
+            <a href="{{ get_permalink(45) }}" class="py-1 px-2 sm:py-3 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent">
+              @include('icon::about', ['classes' => 'text-blue-600 ml-1 h-4 w-4 sm:h-5 sm:w-5 dark:text-accent'])
+              <span class="ml-4 text-base font-medium whitespace-nowrap">{{{ get_the_title(45) }}}</span>
             </a>
-            <a href="?random=1" class="p-3 py-1 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent">
-              @include('icon::random', ['classes' => 'text-blue-600 ml-1 h-5 w-5 dark:text-accent'])
-              <span class="ml-4 mb-1 whitespace-nowrap">{{ __('Random bite', 'tb') }}</span>
+            <a href="?random=1" class="py-1 px-2 sm:py-3 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent">
+              @include('icon::random', ['classes' => 'text-blue-600 ml-1 h-4 w-4 sm:h-5 sm:w-5 dark:text-accent'])
+              <span class="ml-4 text-base font-medium whitespace-nowrap">{{ __('Random bite', 'tb') }}</span>
             </a>
           </div>
           @include('components.search-box', ['variant' => 'without-popup'])

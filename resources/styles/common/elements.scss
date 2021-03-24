@@ -1,5 +1,5 @@
 main {
-  h1 {
-    @apply md:text-center text-gray-700 text-2xl md:text-3xl font-semibold pt-2;
+  .page-header h1 {
+    @apply text-center text-gray-700 text-2xl font-semibold pt-2;
   }
 }
