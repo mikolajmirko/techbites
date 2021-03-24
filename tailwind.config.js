@@ -12,10 +12,12 @@ module.exports = {
     extend: {
       colors: {
         primary: '#2d69ff',
+        primaryAltered: '#7367f1',
         secondary: '#ffb43b',
         dark: '#3f3d56',
-        accent: '#ec4899',
-        white: '#f7fafc',
+        accent: '#D42D80', //'#ec4899',
+        light: '#f7fafc',
+        white: '#ffffff',
         black: '#0a0a0a',
         transparent: 'transparent',
         gray: {
@@ -37,7 +39,11 @@ module.exports = {
   },
   variants: {
     extend: {
-      opacity: ['dark']
+      opacity: ['dark'],
+      margin: ['last'],
+      backgroundImage: ['dark'],
+      display: ['dark'],
+      rotate: ['dark']
     },
   },
   plugins: [require('@tailwindcss/typography')],

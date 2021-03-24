@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-03-23T14:22:26+00:00\n"
+"POT-Creation-Date: 2021-03-24T22:13:23+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 
@@ -29,19 +29,19 @@ msgstr ""
 msgid "https://www.linkedin.com/in/mikolaj-mirko/"
 msgstr ""
 
-#: app/filters.php:15
+#: app/filters.php:11
 msgid "Continued"
 msgstr ""
 
-#: app/setup.php:67
+#: app/setup.php:56
 msgid "Primary Navigation"
 msgstr ""
 
-#: app/setup.php:68
+#: app/setup.php:57
 msgid "Discover Navigation"
 msgstr ""
 
-#: app/setup.php:69
+#: app/setup.php:58
 msgid "Bottom Navigation"
 msgstr ""
 
@@ -69,40 +69,168 @@ msgstr ""
 msgid "Custom Template"
 msgstr ""
 
-#: storage/framework/views/4c9bd2b8eb9554292b21b4123dc7e5d4a0130ae6.php:6
-#: storage/framework/views/717ce6bbd7b97f46a6e5efe6ed1be248a09f6a0b.php:13
-msgid "Sorry, but the page you are trying to view does not exist."
+#: storage/framework/views/0a88618603d582856fca3ac0bc02ed622f397878.php:3
+msgid "Close icon"
 msgstr ""
 
-#: storage/framework/views/5b1642393fdbe406b059fe1600cd7b520f8b5d8b.php:4
-#: storage/framework/views/738088bb44aca2fee929e5165369e7c34dc640b2.php:4
-msgctxt "label"
-msgid "Search for:"
+#: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:4
+#: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:15
+#: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:18
+msgid "Search for bites"
 msgstr ""
 
-#: storage/framework/views/5b1642393fdbe406b059fe1600cd7b520f8b5d8b.php:11
-#: storage/framework/views/738088bb44aca2fee929e5165369e7c34dc640b2.php:10
-msgctxt "placeholder"
-msgid "Search &hellip;"
+#: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:24
+msgid "Search..."
 msgstr ""
 
-#: storage/framework/views/5b1642393fdbe406b059fe1600cd7b520f8b5d8b.php:20
-#: storage/framework/views/738088bb44aca2fee929e5165369e7c34dc640b2.php:18
-msgctxt "submit button"
-msgid "Search"
+#: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:36
+msgid "Advanced search"
 msgstr ""
 
-#: storage/framework/views/35d428189c5c13d7b7f7683cbf26ddc9f65b5a43.php:9
-#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:6
-#: storage/framework/views/efd7d8d90cd97bd2bdcaa596f3d01b94a00e145a.php:13
-msgid "Sorry, no results were found."
+#: storage/framework/views/1b04293a5d5f09d9d1abb98a4d7b1e5be2b19059.php:3
+msgid "Gear icon"
 msgstr ""
 
-#: storage/framework/views/93734e9c372a9a79d70ac8b6a3988bdffd7134c1.php:7
-msgid "By"
+#: storage/framework/views/1d885d95aba2cd98517e5c8272457d9bf941cdf3.php:4
+msgid "Open book icon"
+msgstr ""
+
+#: storage/framework/views/2f64623d929eb10a132f838addd91b7cd1adca10.php:4
+msgid "Magnifying glass icon"
+msgstr ""
+
+#: storage/framework/views/9d934eb942bd05c0c9a5a60eccb2f345cde9b7ad.php:3
+msgid "Pen icon"
+msgstr ""
+
+#: storage/framework/views/74c4fb05d8b3cb37c74b038ddf7a721a5bdea5f6.php:16
+msgid "Wave graphical divider"
+msgstr ""
+
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:3
+msgid "Website header"
+msgstr ""
+
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:9
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:10
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:84
+#: storage/framework/views/18074b4f4423fd764e1d34b6458eb435a8213c53.php:4
+msgid "Portal logo"
+msgstr ""
+
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:14
+msgid "Main navigation"
+msgstr ""
+
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:19
+msgid "Discover"
+msgstr ""
+
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:23
+msgid "Category navigation"
+msgstr ""
+
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:46
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:121
+msgid "Random bite"
+msgstr ""
+
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:72
+msgid "Open menu"
+msgstr ""
+
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:87
+msgid "Close menu"
+msgstr ""
+
+#: storage/framework/views/2710e070f39881ed7898ae0385939a8aac9fd447.php:3
+msgid "Message icon"
+msgstr ""
+
+#: storage/framework/views/4009aa6f62b7a5a5cf4df0c15a42bc70d8e0f191.php:9
+msgid "Site language"
+msgstr ""
+
+#: storage/framework/views/8226ce3032b1ef412a7f68d5a6f1ce5aeb8f37c4.php:4
+#: storage/framework/views/d873badf89f3da8c20be2050c924bd9841803fa1.php:4
+#: storage/framework/views/d12146de3405ae93b80a7a5d3c484b82c04c56f9.php:3
+#: storage/framework/views/e51b674a8bbad182ac56b259cf599a265aef3cc2.php:4
+msgid "Arrow icon"
+msgstr ""
+
+#: storage/framework/views/8652f5657ca9f98a1beef7e1d9b3a60122cbb1f3.php:4
+#: storage/framework/views/8652f5657ca9f98a1beef7e1d9b3a60122cbb1f3.php:9
+#: storage/framework/views/8652f5657ca9f98a1beef7e1d9b3a60122cbb1f3.php:15
+msgid "High contrast mode"
+msgstr ""
+
+#: storage/framework/views/8652f5657ca9f98a1beef7e1d9b3a60122cbb1f3.php:4
+#: storage/framework/views/8652f5657ca9f98a1beef7e1d9b3a60122cbb1f3.php:9
+msgid "On"
+msgstr ""
+
+#: storage/framework/views/8652f5657ca9f98a1beef7e1d9b3a60122cbb1f3.php:4
+#: storage/framework/views/8652f5657ca9f98a1beef7e1d9b3a60122cbb1f3.php:9
+msgid "Off"
+msgstr ""
+
+#: storage/framework/views/18074b4f4423fd764e1d34b6458eb435a8213c53.php:3
+msgid "Website footer"
+msgstr ""
+
+#: storage/framework/views/18074b4f4423fd764e1d34b6458eb435a8213c53.php:20
+#: storage/framework/views/18074b4f4423fd764e1d34b6458eb435a8213c53.php:34
+msgid "Back to top"
+msgstr ""
+
+#: storage/framework/views/53323d0a7a69bd7fd7e9f956af79f1507e380375.php:3
+msgid "Comment icon"
+msgstr ""
+
+#: storage/framework/views/97320f1f7bc2fdc2ebf2c3bbaa3c4b974a9d0bba.php:5
+msgid "Dice icon"
+msgstr ""
+
+#: storage/framework/views/554895548dc18dc643eadb6c77b168442c0ad6ea.php:3
+msgid "Lightbulb icon"
+msgstr ""
+
+#: storage/framework/views/a775664a18daa08fa35ef26f22e2fccfe01a685d.php:8
+msgid "Sharing information through technology"
+msgstr ""
+
+#: storage/framework/views/ad4a17cab0603195c2590e93f174b41330e416eb.php:4
+msgid "Page hero"
+msgstr ""
+
+#: storage/framework/views/b19f125ec58c4ec39900cc94168ce802d8c40e26.php:3
+msgid "Tool icon"
+msgstr ""
+
+#: storage/framework/views/b86f35007bb3be41fee1dc82ca56a4e63cef5321.php:3
+msgid "Document icon"
+msgstr ""
+
+#: storage/framework/views/b841b6b3e18a1ec236c2e06a71a2b5747a640dbd.php:6
+msgid "PL flag"
+msgstr ""
+
+#: storage/framework/views/ca0e158e9f0f4fa524cccbc17aa386218ae38d47.php:5
+msgid "Contrast icon"
+msgstr ""
+
+#: storage/framework/views/ca1189a81fea40b70778408f3ecc6405bc6ad459.php:3
+msgid "Menu icon"
+msgstr ""
+
+#: storage/framework/views/d8f98d0564bafa440d59a1f14cd53f6384680137.php:7
+msgid "UK flag"
 msgstr ""
 
 #: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:2
-#: storage/framework/views/ede90663c87a1e4b243b42c68295aedafcdbf471.php:4
 msgid "Skip to content"
+msgstr ""
+
+#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
+msgid "Website main content"
 msgstr ""

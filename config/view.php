@@ -65,8 +65,8 @@ return [
          | Given the below example, in your views use something like:
          |     @include('MyPlugin::some.view.or.partial.here')
          */
-        // 'MyPlugin' => WP_PLUGIN_DIR . '/my-plugin/resources/views',
         'icon' => get_theme_file_path('/resources/views/icons'),
+        'graphic' => get_theme_file_path('/resources/views/graphics')
     ],
 
     /*

@@ -3,11 +3,9 @@
 @section('content')
   @include('partials.page-header')
 
-  {!! get_search_form(false) !!}
-
   @if (! have_posts())
     <p>
-      {!! __('Sorry, no results were found.', 'tb') !!}
+      {{{ __('Sorry, no results were found.', 'tb') }}}
     <p>
   @endif
 

@@ -49,17 +49,6 @@ add_action('after_setup_theme', function () {
     load_theme_textdomain('tb', get_template_directory() . '/resources/lang');
 
     /**
-     * Enable features from the Soil plugin if activated.
-     * @link https://roots.io/plugins/soil/
-     */
-    add_theme_support('soil', [
-        'clean-up',
-        'nav-walker',
-        'nice-search',
-        'relative-urls'
-    ]);
-
-    /**
      * Register the navigation menus.
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
@@ -174,4 +163,26 @@ add_action('after_setup_theme', function () {
     add_theme_support('customize-selective-refresh-widgets');
 
 }, 20);
+
+
+/**
+ * Enable random post link.
+ * @link https://www.thewebtaylor.com/articles/wordpress-create-a-random-post-button
+ */
+add_action('init', function() {
+    global $wp;
+    $wp->add_query_var('random');
+    add_rewrite_rule('random/?$', 'index.php?random=1', 'top');
+});
+
+add_action('template_redirect', function() {
+    if (get_query_var('random') == 1) {
+        $posts = get_posts('post_type=post&category__not_in=7&orderby=rand&numberposts=1');
+        foreach($posts as $post) {
+            $link = get_permalink($post);
+        }
+        wp_redirect($link, 307);
+        exit;
+    }
+});
 

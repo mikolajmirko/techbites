@@ -5,7 +5,7 @@
 
   @if (! have_posts())
     <p>
-      {!! _e('Sorry, but the page you are trying to view does not exist.', 'tb') !!}
+      {{{ _e('Sorry, but the page you are trying to view does not exist.', 'tb') }}}
     <p>
   @endif
 @endsection
