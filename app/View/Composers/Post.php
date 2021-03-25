@@ -14,7 +14,8 @@ class Post extends Composer
     protected static $views = [
         'partials.page-header',
         'partials.content',
-        'partials.content-*',
+        'partials.content-single',
+        'partials.banner'
     ];
 
     /**
@@ -26,7 +27,18 @@ class Post extends Composer
     {
         return [
             'title' => $this->title(),
+            'is_translated' => $this->is_translated()
         ];
+    }
+
+    /**
+     * Returns true if post has a translation in current language
+     *
+     * @return bool
+     */
+    public function is_translated() {
+        global $sublanguage;
+        return is_single() ? empty($sublanguage->get_post_field_translation(get_post(), 'post_title', $sublanguage->current_language)) : true;
     }
 
     /**
@@ -59,7 +71,7 @@ class Post extends Composer
         }
 
         if (is_404()) {
-            return __('Not Found', 'tb');
+            return __('Page not found', 'tb');
         }
 
         return get_the_title();

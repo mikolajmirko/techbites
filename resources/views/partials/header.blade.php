@@ -21,7 +21,7 @@
             <div x-show="discoveryMenuOpen" @click.away="discoveryMenuOpen = false" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-lg sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
               <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8" role="navigation" aria-label="{{{ __('Category navigation', 'tb') }}}">
-                  @foreach (wp_get_nav_menu_items(32) as $menu_item)
+                  @foreach (wp_get_nav_menu_items($category_menu_id) as $menu_item)
                     <?php
                       $category = get_term($menu_item->object_id);
                     ?>
@@ -48,14 +48,14 @@
             </div>
           </div>
           {{-- Catalog link --}}
-          <a href="{{ get_permalink(54) }}" class="inline-flex items-center font-medium text-white hover:text-gray-50 rounded-sm focus:outline-none focus:ring-2 focus:ring-white py-2 px-3 whitespace-nowrap">
+          <a href="{{ get_permalink($catalog_page_id) }}" class="inline-flex items-center font-medium text-white hover:text-gray-50 rounded-sm focus:outline-none focus:ring-2 focus:ring-white py-2 px-3 whitespace-nowrap">
             @include('icon::catalog', ['classes' => 'text-gray-50 ml-1 h-5 w-5 hover:text-gray-100 hidden lg:block'])
-            <span class="lg:ml-3 mb-1 whitespace-nowrap select-none">{{{ get_the_title(54) }}}</span>
+            <span class="lg:ml-3 mb-1 whitespace-nowrap select-none">{{{ get_the_title($catalog_page_id) }}}</span>
           </a>
           {{-- About link --}}
-          <a href="{{ get_permalink(45) }}" class="inline-flex items-center font-medium text-white hover:text-gray-50 rounded-sm focus:outline-none focus:ring-2 focus:ring-white py-2 px-3 whitespace-nowrap">
+          <a href="{{ get_permalink($about_page_id) }}" class="inline-flex items-center font-medium text-white hover:text-gray-50 rounded-sm focus:outline-none focus:ring-2 focus:ring-white py-2 px-3 whitespace-nowrap">
             @include('icon::about', ['classes' => 'text-gray-50 ml-1 h-5 w-5 hover:text-gray-100 hidden lg:block'])
-            <span class="lg:ml-3 mb-1 whitespace-nowrap select-none">{{{ get_the_title(45) }}}</span>
+            <span class="lg:ml-3 mb-1 whitespace-nowrap select-none">{{{ get_the_title($about_page_id) }}}</span>
           </a>
         </nav>
         {{-- Additional actions --}}
@@ -89,7 +89,7 @@
         {{-- Discover categories --}}
         <div class="pt-4 pb-4 px-6">
           <nav class="grid grid-cols-1 sm:grid-cols-2 gap-y-1 gap-x-4">
-            @foreach (wp_get_nav_menu_items(32) as $menu_item)
+            @foreach (wp_get_nav_menu_items($category_menu_id) as $menu_item)
               <?php
                 $category = get_category($menu_item->object_id);
               ?>
@@ -105,20 +105,20 @@
         {{-- The rest of naviagtion & search --}}
         <div class="py-4 px-6 space-y-6">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-1 gap-x-4">
-            <a href="{{ get_permalink(54) }}" class="py-1 px-2 sm:py-3 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent">
+            <a href="{{ get_permalink($catalog_page_id) }}" class="py-1 px-2 sm:py-3 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent">
               @include('icon::catalog', ['classes' => 'text-blue-600 ml-1 h-4 w-4 sm:h-5 sm:w-5 dark:text-accent'])
-              <span class="ml-4 text-base font-medium whitespace-nowrap">{{{ get_the_title(54) }}}</span>
+              <span class="ml-4 text-base font-medium whitespace-nowrap">{{{ get_the_title($catalog_page_id) }}}</span>
             </a>
-            <a href="{{ get_permalink(45) }}" class="py-1 px-2 sm:py-3 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent">
+            <a href="{{ get_permalink($about_page_id) }}" class="py-1 px-2 sm:py-3 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent">
               @include('icon::about', ['classes' => 'text-blue-600 ml-1 h-4 w-4 sm:h-5 sm:w-5 dark:text-accent'])
-              <span class="ml-4 text-base font-medium whitespace-nowrap">{{{ get_the_title(45) }}}</span>
+              <span class="ml-4 text-base font-medium whitespace-nowrap">{{{ get_the_title($about_page_id) }}}</span>
             </a>
             <a href="?random=1" class="py-1 px-2 sm:py-3 flex items-center rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent">
               @include('icon::random', ['classes' => 'text-blue-600 ml-1 h-4 w-4 sm:h-5 sm:w-5 dark:text-accent'])
               <span class="ml-4 text-base font-medium whitespace-nowrap">{{ __('Random bite', 'tb') }}</span>
             </a>
           </div>
-          @include('components.search-box', ['variant' => 'without-popup'])
+          @include('components.search-box', ['variant' => 'without-popup', 'mobile' => 'true'])
         </div>
         {{-- High contrast mode button & language switcher --}}
         <div class="flex p-4 px-6">
@@ -130,5 +130,5 @@
       </div>
     </div>
   </div>
-  @include('partials.hero')
+  @include('partials.banner')
 </div>

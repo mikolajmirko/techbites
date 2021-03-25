@@ -24,6 +24,10 @@ class App extends Composer
     {
         return [
             'siteName' => $this->siteName(),
+            'catalog_page_id' => 90,
+            'about_page_id' => 92,
+            'category_menu_id' => 32,
+            'bottom_menu_id' => 32
         ];
     }
 

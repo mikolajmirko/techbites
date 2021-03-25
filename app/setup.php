@@ -164,6 +164,17 @@ add_action('after_setup_theme', function () {
 
 }, 20);
 
+/**
+ * Search only posts not included in None category.
+ */
+add_action('pre_get_posts', function ($query) {
+    if (!is_admin() && $query->is_main_query()) {
+        if ($query->is_search) {
+            $query->set('post_type', 'post');
+            $query->set('category__not_in', array(7));
+        }
+    }
+} );
 
 /**
  * Enable random post link.

@@ -23,9 +23,11 @@ $(function() {
     if (scroll >= 50) {
       stickyHeader.addClass("scrolledHeader");
       goUpButton.removeClass("-bottom-12").attr('aria-hidden', 'false');
+      goUpButton.find('button').attr('tabindex', '0');
     } else {
       stickyHeader.removeClass("scrolledHeader");
       goUpButton.addClass("-bottom-12").attr('aria-hidden', 'true');
+      goUpButton.find('button').attr('tabindex', '-1');
     }
   });
 
