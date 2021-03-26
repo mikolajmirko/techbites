@@ -13,6 +13,24 @@
       </a>
     </div>
   </x-hero>
+@elseif (is_category())
+  @if (is_category($category_none_id))
+    <x-hero />
+  @else
+    <?php
+      $cat = get_category( get_query_var( 'cat' ) );
+    ?>
+    <x-hero
+      title="{{ __('Discover', 'tb') }}: {{ $cat->name }}"
+      description="{{ $cat->description }}"
+      graphic="process.{{ $cat->slug }}"
+    />
+  @endif
+@elseif (is_author() or is_date())
+  <x-hero
+    title="{!! get_the_archive_title() !!}"
+    description=""
+  />
 @elseif (is_home())
   <x-hero
     title="{{{ __('Bite catalog', 'tb') }}}"

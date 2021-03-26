@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-03-25T23:11:28+00:00\n"
+"POT-Creation-Date: 2021-03-26T21:52:50+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 
@@ -54,7 +54,7 @@ msgid "Search Results for %s"
 msgstr ""
 
 #: app/View/Composers/Post.php:74
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:63
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:107
 msgid "Page not found"
 msgstr ""
 
@@ -74,10 +74,6 @@ msgstr ""
 msgid "Close icon"
 msgstr ""
 
-#: storage/framework/views/0af3526aa553b4bf719bd589252ab98e216888e0.php:8
-msgid "Maintenance man with a laptop"
-msgstr ""
-
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:4
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:14
 msgid "Search for bites"
@@ -88,7 +84,7 @@ msgstr ""
 msgid "Search..."
 msgstr ""
 
-#: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:30
+#: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:31
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:12
 msgid "Advanced search"
 msgstr ""
@@ -105,6 +101,10 @@ msgstr ""
 msgid "Magnifying glass icon"
 msgstr ""
 
+#: storage/framework/views/7bfaea24563e203d8505d40d6ccae207a2669f6d.php:3
+msgid "Lightbulb icon"
+msgstr ""
+
 #: storage/framework/views/9d934eb942bd05c0c9a5a60eccb2f345cde9b7ad.php:3
 msgid "Pen icon"
 msgstr ""
@@ -117,37 +117,37 @@ msgstr ""
 msgid "Discover and share knowledge about software usability, technology availability and interesting sources of resources."
 msgstr ""
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:24
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:41
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:19
+msgid "Discover"
+msgstr ""
+
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:68
 msgid "Bite catalog"
 msgstr ""
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:24
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:68
 msgid "Search among dozens of bites containing rich and detailed knowledge in the field of IT product development."
 msgstr ""
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:37
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:81
 msgid "Our goal"
 msgstr ""
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:37
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:81
 msgid "We hope to popularize the concepts of usability and accessibility in IT projects and change the belief that if something is aesthetic it must be inaccessible."
 msgstr ""
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:50
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:94
 msgid "We have a small problem"
 msgstr ""
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:50
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:94
 msgid "Sorry, this bite has no translation in selected language. Try a different one or search for other bites."
 msgstr ""
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:63
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:107
 msgid "Sorry, but the page you are trying to view does not exist. Use main navigation or search to discover the best bites."
-msgstr ""
-
-#: storage/framework/views/35d428189c5c13d7b7f7683cbf26ddc9f65b5a43.php:6
-#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:6
-msgid "Sorry, no results were found."
 msgstr ""
 
 #: storage/framework/views/74c4fb05d8b3cb37c74b038ddf7a721a5bdea5f6.php:16
@@ -155,14 +155,7 @@ msgid "Wave graphical divider"
 msgstr ""
 
 #: storage/framework/views/86ec4525e1d1cddf6365c598bc4f2d4d20178c27.php:4
-#: storage/framework/views/ad4a17cab0603195c2590e93f174b41330e416eb.php:4
-#: storage/framework/views/ad4a17cab0603195c2590e93f174b41330e416eb.php:29
-#: storage/framework/views/ad4a17cab0603195c2590e93f174b41330e416eb.php:40
 msgid "Page hero"
-msgstr ""
-
-#: storage/framework/views/87efdd8b64a40a2fffa0fb39c33853a6f8aba224.php:8
-msgid "Browsing a folder with documents"
 msgstr ""
 
 #: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:3
@@ -171,7 +164,7 @@ msgstr ""
 
 #: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:9
 #: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:10
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:84
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:85
 #: storage/framework/views/18074b4f4423fd764e1d34b6458eb435a8213c53.php:4
 msgid "Portal logo"
 msgstr ""
@@ -180,24 +173,20 @@ msgstr ""
 msgid "Main navigation"
 msgstr ""
 
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:19
-msgid "Discover"
-msgstr ""
-
 #: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:23
 msgid "Category navigation"
 msgstr ""
 
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:46
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:121
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:47
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:122
 msgid "Random bite"
 msgstr ""
 
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:72
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:73
 msgid "Open menu"
 msgstr ""
 
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:87
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:88
 msgid "Close menu"
 msgstr ""
 
@@ -212,7 +201,6 @@ msgstr ""
 #: storage/framework/views/8226ce3032b1ef412a7f68d5a6f1ce5aeb8f37c4.php:4
 #: storage/framework/views/d873badf89f3da8c20be2050c924bd9841803fa1.php:4
 #: storage/framework/views/d12146de3405ae93b80a7a5d3c484b82c04c56f9.php:3
-#: storage/framework/views/e51b674a8bbad182ac56b259cf599a265aef3cc2.php:4
 msgid "Arrow icon"
 msgstr ""
 
@@ -232,6 +220,10 @@ msgstr ""
 msgid "Off"
 msgstr ""
 
+#: storage/framework/views/8967b3da19a7fd191bede14edb1cf863a119eeab.php:5
+msgid "Compass icon"
+msgstr ""
+
 #: storage/framework/views/18074b4f4423fd764e1d34b6458eb435a8213c53.php:3
 msgid "Website footer"
 msgstr ""
@@ -249,32 +241,12 @@ msgstr ""
 msgid "Dice icon"
 msgstr ""
 
-#: storage/framework/views/554895548dc18dc643eadb6c77b168442c0ad6ea.php:3
-msgid "Lightbulb icon"
-msgstr ""
-
-#: storage/framework/views/a775664a18daa08fa35ef26f22e2fccfe01a685d.php:8
-msgid "Sharing information through technology"
-msgstr ""
-
-#: storage/framework/views/b1ea6e3e92fe50d92968fd1ad46549f647866d9d.php:8
-msgid "Man with an empty box"
-msgstr ""
-
-#: storage/framework/views/b19f125ec58c4ec39900cc94168ce802d8c40e26.php:3
-msgid "Tool icon"
-msgstr ""
-
-#: storage/framework/views/b86f35007bb3be41fee1dc82ca56a4e63cef5321.php:3
-msgid "Document icon"
-msgstr ""
-
 #: storage/framework/views/b841b6b3e18a1ec236c2e06a71a2b5747a640dbd.php:6
 msgid "PL flag"
 msgstr ""
 
-#: storage/framework/views/c26817c3963d3d42f6dc4d1cd38c8cbe211b6fd9.php:8
-msgid "Laptop with a tech bite"
+#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:6
+msgid "Sorry, no results were found."
 msgstr ""
 
 #: storage/framework/views/ca0e158e9f0f4fa524cccbc17aa386218ae38d47.php:5
@@ -283,6 +255,10 @@ msgstr ""
 
 #: storage/framework/views/ca1189a81fea40b70778408f3ecc6405bc6ad459.php:3
 msgid "Menu icon"
+msgstr ""
+
+#: storage/framework/views/d6a8d2433e48fcdfc37da7f49594d7211bff40f8.php:3
+msgid "Document icon"
 msgstr ""
 
 #: storage/framework/views/d8f98d0564bafa440d59a1f14cd53f6384680137.php:7

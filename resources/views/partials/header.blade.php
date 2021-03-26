@@ -18,15 +18,16 @@
               @include('icon::chevron', ['classes' => 'text-gray-50 h-5 w-5 hover:text-gray-100 hidden lg:block transform transition', 'attributes' => 'x-bind:class={"rotate-180":discoveryMenuOpen}'])
               <span class="lg:ml-3 mb-1 whitespace-nowrap">{{ __('Discover', 'tb') }}</span>
             </button>
-            <div x-show="discoveryMenuOpen" @click.away="discoveryMenuOpen = false" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-lg sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+            <div x-show="discoveryMenuOpen" @click.away="discoveryMenuOpen = false" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-lg sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
               <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8" role="navigation" aria-label="{{{ __('Category navigation', 'tb') }}}">
+                <div class="relative grid gap-6 bg-white pr-8 py-8 sm:gap-8" role="navigation" aria-label="{{{ __('Category navigation', 'tb') }}}">
                   @foreach (wp_get_nav_menu_items($category_menu_id) as $menu_item)
                     <?php
                       $category = get_term($menu_item->object_id);
                     ?>
-                    <a role="listitem" href="{{ get_category_link($category) }}" class="-m-3 p-3 flex items-start hover:bg-gray-50 rounded-sm focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent py-2 px-2">
-                      @include('icon::process.' . $category->slug, ['classes' => 'flex-shrink-0 h-8 w-8 text-primary dark:text-accent'])
+                    <a role="listitem" href="{{ get_category_link($category) }}" class="-m-3 ml-0 flex items-start hover:bg-gray-50 rounded-r-sm focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent py-2 pr-2">
+                      <div class="h-10 w-1 rounded-r-md mr-4 flex-shrink-0" style="background-color: {{ $category_colors[$category->slug] }}"></div>
+                      @include('icon::process.' . $category->slug, ['classes' => 'flex-shrink-0 h-10 w-10 text-dark'])
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
                           {{{ $category->name }}}

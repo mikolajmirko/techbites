@@ -35,7 +35,7 @@ class Hero extends Component
      * @param  string  $graphic
      * @return void
      */
-    public function __construct($title = null, $description = null, $graphic = 'frontpage')
+    public function __construct($title = null, $description = null, $graphic = null)
     {
         $this->title = $title;
         $this->description = $description;

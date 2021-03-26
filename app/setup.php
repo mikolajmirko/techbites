@@ -197,3 +197,16 @@ add_action('template_redirect', function() {
     }
 });
 
+/**
+ * Add admin url for ajax actions used in js files.
+ */
+add_action( 'wp_head', function() {
+    global $sublanguage;
+?>
+<script type="text/javascript">
+    var languageCode = "<?php echo $sublanguage->current_language->post_name; ?>";
+    var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+</script>
+<?php
+});
+

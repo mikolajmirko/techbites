@@ -2,27 +2,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tasty bites 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/techbites\n"
-"POT-Creation-Date: 2021-03-25T23:11:28+00:00\n"
-"PO-Revision-Date: 2021-03-26 00:13+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-03-25T23:11:28+00:00\n"
+"PO-Revision-Date: 2021-03-26 22:59+0100\n"
+"Language: pl_PL\n"
 "X-Generator: Poedit 2.4.2\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
 #. Theme Name of the theme
 msgid "Tasty bites"
 msgstr ""
 
 #. Description of the theme
-msgid ""
-"Base theme for TechBites website. Theme includes high-contrast mode and is "
-"integrated with Polylang multi language plugin system. Editing parts of this "
-"theme is not adviceable."
+msgid "Base theme for TechBites website. Theme includes high-contrast mode and is integrated with Polylang multi language plugin system. Editing parts of this theme is not adviceable."
 msgstr ""
 
 #. Author of the theme
@@ -68,9 +64,7 @@ msgstr "Błąd przy próbie załadowania pliku %s."
 
 #: functions.php:15
 msgid "Error locating autoloader. Please run <code>composer install</code>."
-msgstr ""
-"Błąd przy próbie załadowania automatycznego. Użyj polecenia <code>composer "
-"install</code>."
+msgstr "Błąd przy próbie załadowania automatycznego. Użyj polecenia <code>composer install</code>."
 
 #. Template Name of the theme
 msgid "Custom Template"
@@ -120,58 +114,36 @@ msgid "Technology doesn't bite"
 msgstr "Technologia nie gryzie"
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:3
-msgid ""
-"Discover and share knowledge about software usability, technology "
-"availability and interesting sources of resources."
-msgstr ""
-"Odkrywaj i dziel się wiedzą o użyteczności oprogramowania, dostępności "
-"technologii oraz ciekawych źródłach zasobów."
+msgid "Discover and share knowledge about software usability, technology availability and interesting sources of resources."
+msgstr "Odkrywaj i dziel się wiedzą o użyteczności oprogramowania, dostępności technologii oraz ciekawych źródłach zasobów."
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:24
 msgid "Bite catalog"
 msgstr "Katalog gryzków"
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:24
-msgid ""
-"Search among dozens of bites containing rich and detailed knowledge in the "
-"field of IT product development."
-msgstr ""
-"Szukaj wśród dziesiątek gryzków zawierających bogatą i sprawdzoną wiedzę z "
-"dziedziny wytwarzania produktów IT."
+msgid "Search among dozens of bites containing rich and detailed knowledge in the field of IT product development."
+msgstr "Szukaj wśród dziesiątek gryzków zawierających bogatą i sprawdzoną wiedzę z dziedziny wytwarzania produktów IT."
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:37
 msgid "Our goal"
 msgstr "Nasz cel"
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:37
-msgid ""
-"We hope to popularize the concepts of usability and accessibility in IT "
-"projects and change the belief that if something is aesthetic it must be "
-"inaccessible."
-msgstr ""
-"Pragniemy spopularyzować pojęcia użyteczności i dostępności w projektach IT "
-"i odmienić przekonanie, że jeśli coś jest estetyczne to nie może być "
-"dostępne."
+msgid "We hope to popularize the concepts of usability and accessibility in IT projects and change the belief that if something is aesthetic it must be inaccessible."
+msgstr "Pragniemy spopularyzować pojęcia użyteczności i dostępności w projektach IT i odmienić przekonanie, że jeśli coś jest estetyczne to nie może być dostępne."
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:50
 msgid "We have a small problem"
 msgstr "Mamy mały problem"
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:50
-msgid ""
-"Sorry, this bite has no translation in selected language. Try a different "
-"one or search for other bites."
-msgstr ""
-"Then gryzek nie posiada tłumaczenia w wybranym języku. Zmień go na inny lub "
-"wyszukaj inne gryzki."
+msgid "Sorry, this bite has no translation in selected language. Try a different one or search for other bites."
+msgstr "Then gryzek nie posiada tłumaczenia w wybranym języku. Zmień go na inny lub wyszukaj inne gryzki."
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:63
-msgid ""
-"Sorry, but the page you are trying to view does not exist. Use main "
-"navigation or search to discover the best bites."
-msgstr ""
-"Strona, którą próbujesz wyświetlić, nie istnieje. Użyj nawigacji lub "
-"wyszukiwarki, aby odkryć najlepsze gryzki."
+msgid "Sorry, but the page you are trying to view does not exist. Use main navigation or search to discover the best bites."
+msgstr "Strona, którą próbujesz wyświetlić, nie istnieje. Użyj nawigacji lub wyszukiwarki, aby odkryć najlepsze gryzki."
 
 #: storage/framework/views/35d428189c5c13d7b7f7683cbf26ddc9f65b5a43.php:6
 #: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:6
@@ -325,27 +297,25 @@ msgstr "Przejdź do treści"
 msgid "Website main content"
 msgstr "Główna treść strony"
 
-#~ msgid "Not Found"
-#~ msgstr "Nie znaleziono"
+#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
+msgid "Not Found"
+msgstr "Nie znaleziono"
 
-#, fuzzy
-#~| msgid "Sorry, but the page you are trying to view does not exist."
-#~ msgid ""
-#~ "Sorry, but the page you are trying to view does not exist. Use main "
-#~ "navigation or search function to discover the best bites."
-#~ msgstr "Strona, którą próbujesz wyświetlić, nie istnieje."
+#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
+msgctxt "label"
+msgid "Search for:"
+msgstr "Wyszukaj:"
 
-#~ msgctxt "label"
-#~ msgid "Search for:"
-#~ msgstr "Wyszukaj:"
+#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Szukaj &hellip;"
 
-#~ msgctxt "placeholder"
-#~ msgid "Search &hellip;"
-#~ msgstr "Szukaj &hellip;"
+#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
+msgctxt "submit button"
+msgid "Search"
+msgstr "Szukaj"
 
-#~ msgctxt "submit button"
-#~ msgid "Search"
-#~ msgstr "Szukaj"
-
-#~ msgid "By"
-#~ msgstr "Autorstwa"
+#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
+msgid "By"
+msgstr "Autorstwa"

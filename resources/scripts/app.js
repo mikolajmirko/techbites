@@ -57,4 +57,17 @@ $(function() {
     }
   });
 
+  $('#searchField-with-popup').on('keyup', function() {
+    $.post(ajaxurl,
+      {
+        action: 'data_search_fetch',
+        language: languageCode,
+        keyword: $('#searchField-with-popup').val()
+      },
+      function(data) {
+        $('#dynamicSearchFetch').html(data);
+      }
+    );
+  });
+
 });
