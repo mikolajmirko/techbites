@@ -165,14 +165,13 @@ add_action('after_setup_theme', function () {
 }, 20);
 
 /**
- * Search only posts not included in None category.
+ * Search posts not included in None category & apply category filter.
  */
 add_action('pre_get_posts', function ($query) {
-    if (!is_admin() && $query->is_main_query()) {
-        if ($query->is_search) {
-            $query->set('post_type', 'post');
-            $query->set('category__not_in', array(7));
-        }
+    if (!is_admin() && $query->is_main_query() && is_home()) {
+        $query->set('posts_per_page', get_option('posts_per_page'));
+        $query->set('post_type', 'post');
+        $query->set('category__not_in', array(7));
     }
 } );
 

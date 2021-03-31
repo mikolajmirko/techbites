@@ -14,7 +14,7 @@
       {{{ __('Search for bites', 'tb') }}}
     </label>
     <div class="flex items-center search-form">
-      <input id="searchField-{{$variant}}{{ isset($mobile) ? '-mobile' : '' }}" x-ref="searchField" type="search" name="s" placeholder="{{{ __('Search...', 'tb') }}}" value="{{{ get_search_query() }}}" class="flex-grow w-4/5 mr-2 focus:outline-none shadow-md border-2 border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-accent rounded-md h-12 px-4 dark:placeholder-black" autocomplete="false">
+      <input id="searchField-{{$variant}}{{ isset($mobile) ? '-mobile' : '' }}" x-ref="searchField" type="search" name="s" placeholder="{{{ __('Search...', 'tb') }}}" value="{{{ get_search_query() }}}" class="flex-grow w-4/5 mr-2 focus:outline-none shadow-md border-2 border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-accent rounded-md h-12 px-4 dark:placeholder-black focus:ring-0" autocomplete="false">
       <button type="submit" class="flex w-12 h-12 justify-center items-center shadow-md rounded-md text-white bg-dark dark:bg-accent hover:dark dark:hover:bg-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-accent" aria-label="{{{ __('Search...', 'tb') }}}">
         @include('icon::search', ['classes' => 'h-6 w-6'])
       </button>

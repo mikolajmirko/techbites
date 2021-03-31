@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-03-26T21:52:50+00:00\n"
+"POT-Creation-Date: 2021-03-31T22:12:54+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 
@@ -66,6 +66,16 @@ msgstr ""
 msgid "Error locating autoloader. Please run <code>composer install</code>."
 msgstr ""
 
+#: resources/views/components/pagination.blade.php:24
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:25
+msgid "Page"
+msgstr ""
+
+#: resources/views/components/search-filters.blade.php:57
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:59
+msgid "No tags available"
+msgstr ""
+
 #. Template Name of the theme
 msgid "Custom Template"
 msgstr ""
@@ -74,13 +84,21 @@ msgstr ""
 msgid "Close icon"
 msgstr ""
 
+#: storage/framework/views/0b254655eb599dc9fc1f45f7530fa5a625ed33f3.php:8
+#: storage/framework/views/9d934eb942bd05c0c9a5a60eccb2f345cde9b7ad.php:3
+msgid "Pen icon"
+msgstr ""
+
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:4
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:14
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:21
 msgid "Search for bites"
 msgstr ""
 
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:18
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:19
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:25
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:88
 msgid "Search..."
 msgstr ""
 
@@ -102,11 +120,30 @@ msgid "Magnifying glass icon"
 msgstr ""
 
 #: storage/framework/views/7bfaea24563e203d8505d40d6ccae207a2669f6d.php:3
+#: storage/framework/views/403a99c633862630debce1a3347e983c5b211691.php:8
 msgid "Lightbulb icon"
 msgstr ""
 
-#: storage/framework/views/9d934eb942bd05c0c9a5a60eccb2f345cde9b7ad.php:3
-msgid "Pen icon"
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:15
+msgid "Showing"
+msgstr ""
+
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:15
+msgid "of"
+msgstr ""
+
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:15
+msgid "result"
+msgid_plural "results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:45
+msgid "Previous"
+msgstr ""
+
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:75
+msgid "Next"
 msgstr ""
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:3
@@ -158,6 +195,10 @@ msgstr ""
 msgid "Page hero"
 msgstr ""
 
+#: storage/framework/views/87efdd8b64a40a2fffa0fb39c33853a6f8aba224.php:8
+msgid "Browsing a folder with documents"
+msgstr ""
+
 #: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:3
 msgid "Website header"
 msgstr ""
@@ -201,6 +242,7 @@ msgstr ""
 #: storage/framework/views/8226ce3032b1ef412a7f68d5a6f1ce5aeb8f37c4.php:4
 #: storage/framework/views/d873badf89f3da8c20be2050c924bd9841803fa1.php:4
 #: storage/framework/views/d12146de3405ae93b80a7a5d3c484b82c04c56f9.php:3
+#: storage/framework/views/e51b674a8bbad182ac56b259cf599a265aef3cc2.php:4
 msgid "Arrow icon"
 msgstr ""
 
@@ -221,6 +263,7 @@ msgid "Off"
 msgstr ""
 
 #: storage/framework/views/8967b3da19a7fd191bede14edb1cf863a119eeab.php:5
+#: storage/framework/views/c2b56cae7ecab2528fb753b160385737b7329363.php:8
 msgid "Compass icon"
 msgstr ""
 
@@ -234,6 +277,7 @@ msgid "Back to top"
 msgstr ""
 
 #: storage/framework/views/53323d0a7a69bd7fd7e9f956af79f1507e380375.php:3
+#: storage/framework/views/c2ea43443fbe8d3a65ce87280f7c0e4a868cda73.php:8
 msgid "Comment icon"
 msgstr ""
 
@@ -241,12 +285,32 @@ msgstr ""
 msgid "Dice icon"
 msgstr ""
 
+#: storage/framework/views/a775664a18daa08fa35ef26f22e2fccfe01a685d.php:8
+msgid "Sharing information through technology"
+msgstr ""
+
+#: storage/framework/views/b1ea6e3e92fe50d92968fd1ad46549f647866d9d.php:8
+msgid "Man with an empty box"
+msgstr ""
+
 #: storage/framework/views/b841b6b3e18a1ec236c2e06a71a2b5747a640dbd.php:6
 msgid "PL flag"
 msgstr ""
 
-#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:6
+#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:3
+msgid "Website main content"
+msgstr ""
+
+#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:7
 msgid "Sorry, no results were found."
+msgstr ""
+
+#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:19
+msgid "Sidebar"
+msgstr ""
+
+#: storage/framework/views/c26817c3963d3d42f6dc4d1cd38c8cbe211b6fd9.php:8
+msgid "Laptop with a tech bite"
 msgstr ""
 
 #: storage/framework/views/ca0e158e9f0f4fa524cccbc17aa386218ae38d47.php:5
@@ -257,7 +321,12 @@ msgstr ""
 msgid "Menu icon"
 msgstr ""
 
+#: storage/framework/views/d0866f74ea06c1339f3966af69f11b1a98325d67.php:6
+msgid "Hash icon"
+msgstr ""
+
 #: storage/framework/views/d6a8d2433e48fcdfc37da7f49594d7211bff40f8.php:3
+#: storage/framework/views/fca89c341f4617de21ef3780363ec3ab77f8e9b3.php:8
 msgid "Document icon"
 msgstr ""
 
@@ -269,6 +338,46 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
-msgid "Website main content"
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:4
+msgid "Search and filters"
+msgstr ""
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:19
+msgid "Searching"
+msgstr ""
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:27
+msgid "Process phase"
+msgstr ""
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:43
+msgid "Bite tags"
+msgstr ""
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:72
+msgid "Sort by"
+msgstr ""
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:74
+msgid "Post date"
+msgstr ""
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:75
+msgid "Title"
+msgstr ""
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:79
+msgid "Sort order"
+msgstr ""
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:81
+msgid "Descending"
+msgstr ""
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:82
+msgid "Ascending"
+msgstr ""
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:89
+msgid "Search"
 msgstr ""

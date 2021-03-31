@@ -2,23 +2,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tasty bites 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/techbites\n"
+"POT-Creation-Date: 2021-03-31T22:12:54+00:00\n"
+"PO-Revision-Date: 2021-04-01 00:22+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-03-25T23:11:28+00:00\n"
-"PO-Revision-Date: 2021-03-26 22:59+0100\n"
-"Language: pl_PL\n"
 "X-Generator: Poedit 2.4.2\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
 
 #. Theme Name of the theme
 msgid "Tasty bites"
 msgstr ""
 
 #. Description of the theme
-msgid "Base theme for TechBites website. Theme includes high-contrast mode and is integrated with Polylang multi language plugin system. Editing parts of this theme is not adviceable."
+msgid ""
+"Base theme for TechBites website. Theme includes high-contrast mode and is "
+"integrated with Polylang multi language plugin system. Editing parts of this "
+"theme is not adviceable."
 msgstr ""
 
 #. Author of the theme
@@ -54,7 +58,7 @@ msgid "Search Results for %s"
 msgstr "Wyniki wyszukiwania dla %s"
 
 #: app/View/Composers/Post.php:74
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:63
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:107
 msgid "Page not found"
 msgstr "Nie znaleziono strony"
 
@@ -64,7 +68,19 @@ msgstr "Błąd przy próbie załadowania pliku %s."
 
 #: functions.php:15
 msgid "Error locating autoloader. Please run <code>composer install</code>."
-msgstr "Błąd przy próbie załadowania automatycznego. Użyj polecenia <code>composer install</code>."
+msgstr ""
+"Błąd przy próbie załadowania automatycznego. Użyj polecenia <code>composer "
+"install</code>."
+
+#: resources/views/components/pagination.blade.php:24
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:25
+msgid "Page"
+msgstr "Strona"
+
+#: resources/views/components/search-filters.blade.php:57
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:59
+msgid "No tags available"
+msgstr "Brak dostępnych tagów"
 
 #. Template Name of the theme
 msgid "Custom Template"
@@ -74,21 +90,25 @@ msgstr "Niestandardowy szablon"
 msgid "Close icon"
 msgstr "Ikona krzyżyka"
 
-#: storage/framework/views/0af3526aa553b4bf719bd589252ab98e216888e0.php:8
-msgid "Maintenance man with a laptop"
-msgstr "Konserwator z laptopem"
+#: storage/framework/views/0b254655eb599dc9fc1f45f7530fa5a625ed33f3.php:8
+#: storage/framework/views/9d934eb942bd05c0c9a5a60eccb2f345cde9b7ad.php:3
+msgid "Pen icon"
+msgstr "Ikona pióra"
 
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:4
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:14
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:21
 msgid "Search for bites"
 msgstr "Szukaj gryzków"
 
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:18
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:19
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:25
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:88
 msgid "Search..."
 msgstr "Szukaj..."
 
-#: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:30
+#: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:31
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:12
 msgid "Advanced search"
 msgstr "Zaawansowane wyszukiwanie"
@@ -105,59 +125,102 @@ msgstr "Ikona otwartej książki"
 msgid "Magnifying glass icon"
 msgstr "Ikona szkła powiększającego"
 
-#: storage/framework/views/9d934eb942bd05c0c9a5a60eccb2f345cde9b7ad.php:3
-msgid "Pen icon"
-msgstr "Ikona pióra"
+#: storage/framework/views/7bfaea24563e203d8505d40d6ccae207a2669f6d.php:3
+#: storage/framework/views/403a99c633862630debce1a3347e983c5b211691.php:8
+msgid "Lightbulb icon"
+msgstr "Ikona żarówki"
+
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:15
+msgid "Showing"
+msgstr "Znaleziono"
+
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:15
+msgid "of"
+msgstr "z"
+
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:15
+msgid "result"
+msgid_plural "results"
+msgstr[0] "wynik"
+msgstr[1] "wyniki"
+msgstr[2] "wyników"
+
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:45
+msgid "Previous"
+msgstr "Poprzednie"
+
+#: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:75
+msgid "Next"
+msgstr "Następne"
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:3
 msgid "Technology doesn't bite"
 msgstr "Technologia nie gryzie"
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:3
-msgid "Discover and share knowledge about software usability, technology availability and interesting sources of resources."
-msgstr "Odkrywaj i dziel się wiedzą o użyteczności oprogramowania, dostępności technologii oraz ciekawych źródłach zasobów."
+msgid ""
+"Discover and share knowledge about software usability, technology "
+"availability and interesting sources of resources."
+msgstr ""
+"Odkrywaj i dziel się wiedzą o użyteczności oprogramowania, dostępności "
+"technologii oraz ciekawych źródłach zasobów."
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:24
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:41
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:19
+msgid "Discover"
+msgstr "Odkrywaj"
+
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:68
 msgid "Bite catalog"
 msgstr "Katalog gryzków"
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:24
-msgid "Search among dozens of bites containing rich and detailed knowledge in the field of IT product development."
-msgstr "Szukaj wśród dziesiątek gryzków zawierających bogatą i sprawdzoną wiedzę z dziedziny wytwarzania produktów IT."
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:68
+msgid ""
+"Search among dozens of bites containing rich and detailed knowledge in the "
+"field of IT product development."
+msgstr ""
+"Szukaj wśród dziesiątek gryzków zawierających bogatą i sprawdzoną wiedzę z "
+"dziedziny wytwarzania produktów IT."
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:37
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:81
 msgid "Our goal"
 msgstr "Nasz cel"
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:37
-msgid "We hope to popularize the concepts of usability and accessibility in IT projects and change the belief that if something is aesthetic it must be inaccessible."
-msgstr "Pragniemy spopularyzować pojęcia użyteczności i dostępności w projektach IT i odmienić przekonanie, że jeśli coś jest estetyczne to nie może być dostępne."
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:81
+msgid ""
+"We hope to popularize the concepts of usability and accessibility in IT "
+"projects and change the belief that if something is aesthetic it must be "
+"inaccessible."
+msgstr ""
+"Pragniemy spopularyzować pojęcia użyteczności i dostępności w projektach IT "
+"i odmienić przekonanie, że jeśli coś jest estetyczne to nie może być "
+"dostępne."
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:50
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:94
 msgid "We have a small problem"
 msgstr "Mamy mały problem"
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:50
-msgid "Sorry, this bite has no translation in selected language. Try a different one or search for other bites."
-msgstr "Then gryzek nie posiada tłumaczenia w wybranym języku. Zmień go na inny lub wyszukaj inne gryzki."
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:94
+msgid ""
+"Sorry, this bite has no translation in selected language. Try a different "
+"one or search for other bites."
+msgstr ""
+"Then gryzek nie posiada tłumaczenia w wybranym języku. Zmień go na inny lub "
+"wyszukaj inne gryzki."
 
-#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:63
-msgid "Sorry, but the page you are trying to view does not exist. Use main navigation or search to discover the best bites."
-msgstr "Strona, którą próbujesz wyświetlić, nie istnieje. Użyj nawigacji lub wyszukiwarki, aby odkryć najlepsze gryzki."
-
-#: storage/framework/views/35d428189c5c13d7b7f7683cbf26ddc9f65b5a43.php:6
-#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:6
-msgid "Sorry, no results were found."
-msgstr "Nie znaleziono żadnych wyników."
+#: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:107
+msgid ""
+"Sorry, but the page you are trying to view does not exist. Use main "
+"navigation or search to discover the best bites."
+msgstr ""
+"Strona, którą próbujesz wyświetlić, nie istnieje. Użyj nawigacji lub "
+"wyszukiwarki, aby odkryć najlepsze gryzki."
 
 #: storage/framework/views/74c4fb05d8b3cb37c74b038ddf7a721a5bdea5f6.php:16
 msgid "Wave graphical divider"
 msgstr "Fale element graficzny"
 
 #: storage/framework/views/86ec4525e1d1cddf6365c598bc4f2d4d20178c27.php:4
-#: storage/framework/views/ad4a17cab0603195c2590e93f174b41330e416eb.php:4
-#: storage/framework/views/ad4a17cab0603195c2590e93f174b41330e416eb.php:29
-#: storage/framework/views/ad4a17cab0603195c2590e93f174b41330e416eb.php:40
 msgid "Page hero"
 msgstr "Sekcja informacyjna strony"
 
@@ -171,7 +234,7 @@ msgstr "Nagłówek strony"
 
 #: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:9
 #: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:10
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:84
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:85
 #: storage/framework/views/18074b4f4423fd764e1d34b6458eb435a8213c53.php:4
 msgid "Portal logo"
 msgstr "Logo portalu"
@@ -180,24 +243,20 @@ msgstr "Logo portalu"
 msgid "Main navigation"
 msgstr "Nawigacja główna"
 
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:19
-msgid "Discover"
-msgstr "Odkrywaj"
-
 #: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:23
 msgid "Category navigation"
 msgstr "Lista kategorii"
 
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:46
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:121
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:47
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:122
 msgid "Random bite"
 msgstr "Losowy gryzek"
 
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:72
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:73
 msgid "Open menu"
 msgstr "Otwórz menu"
 
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:87
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:88
 msgid "Close menu"
 msgstr "Zamknij menu"
 
@@ -232,6 +291,11 @@ msgstr "Włączony"
 msgid "Off"
 msgstr "Wyłączony"
 
+#: storage/framework/views/8967b3da19a7fd191bede14edb1cf863a119eeab.php:5
+#: storage/framework/views/c2b56cae7ecab2528fb753b160385737b7329363.php:8
+msgid "Compass icon"
+msgstr "Ikona kompasu"
+
 #: storage/framework/views/18074b4f4423fd764e1d34b6458eb435a8213c53.php:3
 msgid "Website footer"
 msgstr "Stopka strony"
@@ -242,16 +306,13 @@ msgid "Back to top"
 msgstr "Powrót na górę"
 
 #: storage/framework/views/53323d0a7a69bd7fd7e9f956af79f1507e380375.php:3
+#: storage/framework/views/c2ea43443fbe8d3a65ce87280f7c0e4a868cda73.php:8
 msgid "Comment icon"
 msgstr "Ikona komentarza"
 
 #: storage/framework/views/97320f1f7bc2fdc2ebf2c3bbaa3c4b974a9d0bba.php:5
 msgid "Dice icon"
 msgstr "Ikona kostki do gry"
-
-#: storage/framework/views/554895548dc18dc643eadb6c77b168442c0ad6ea.php:3
-msgid "Lightbulb icon"
-msgstr "Ikona żarówki"
 
 #: storage/framework/views/a775664a18daa08fa35ef26f22e2fccfe01a685d.php:8
 msgid "Sharing information through technology"
@@ -261,17 +322,21 @@ msgstr "Dzielenie się wiedzą za pomocą technologii"
 msgid "Man with an empty box"
 msgstr "Mężczyzna z pustym pudłem"
 
-#: storage/framework/views/b19f125ec58c4ec39900cc94168ce802d8c40e26.php:3
-msgid "Tool icon"
-msgstr "Ikona narzędzia"
-
-#: storage/framework/views/b86f35007bb3be41fee1dc82ca56a4e63cef5321.php:3
-msgid "Document icon"
-msgstr "Ikona dokumentu"
-
 #: storage/framework/views/b841b6b3e18a1ec236c2e06a71a2b5747a640dbd.php:6
 msgid "PL flag"
 msgstr "Flaga PL"
+
+#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:3
+msgid "Website main content"
+msgstr "Główna treść strony"
+
+#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:7
+msgid "Sorry, no results were found."
+msgstr "Nie znaleziono żadnych wyników."
+
+#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:19
+msgid "Sidebar"
+msgstr "Pasek boczny"
 
 #: storage/framework/views/c26817c3963d3d42f6dc4d1cd38c8cbe211b6fd9.php:8
 msgid "Laptop with a tech bite"
@@ -285,6 +350,15 @@ msgstr "Ikona kontrastu"
 msgid "Menu icon"
 msgstr "Ikona menu"
 
+#: storage/framework/views/d0866f74ea06c1339f3966af69f11b1a98325d67.php:6
+msgid "Hash icon"
+msgstr "Ikona hashu"
+
+#: storage/framework/views/d6a8d2433e48fcdfc37da7f49594d7211bff40f8.php:3
+#: storage/framework/views/fca89c341f4617de21ef3780363ec3ab77f8e9b3.php:8
+msgid "Document icon"
+msgstr "Ikona dokumentu"
+
 #: storage/framework/views/d8f98d0564bafa440d59a1f14cd53f6384680137.php:7
 msgid "UK flag"
 msgstr "Flaga UK"
@@ -293,29 +367,66 @@ msgstr "Flaga UK"
 msgid "Skip to content"
 msgstr "Przejdź do treści"
 
-#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
-msgid "Website main content"
-msgstr "Główna treść strony"
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:4
+msgid "Search and filters"
+msgstr "Wyszukiwanie i filtry"
 
-#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
-msgid "Not Found"
-msgstr "Nie znaleziono"
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:19
+msgid "Searching"
+msgstr "Wyszukiwanie"
 
-#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
-msgctxt "label"
-msgid "Search for:"
-msgstr "Wyszukaj:"
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:27
+msgid "Process phase"
+msgstr "Fazy procesu"
 
-#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
-msgctxt "placeholder"
-msgid "Search &hellip;"
-msgstr "Szukaj &hellip;"
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:43
+msgid "Bite tags"
+msgstr "Tagi gryzków"
 
-#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
-msgctxt "submit button"
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:72
+msgid "Sort by"
+msgstr "Sortuj według"
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:74
+msgid "Post date"
+msgstr "Data dodania"
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:75
+msgid "Title"
+msgstr "Tytuł"
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:79
+msgid "Sort order"
+msgstr "Kolejność"
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:81
+msgid "Descending"
+msgstr "Malejąco"
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:82
+msgid "Ascending"
+msgstr "Rosnąco"
+
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:89
 msgid "Search"
 msgstr "Szukaj"
 
-#: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:9
-msgid "By"
-msgstr "Autorstwa"
+#~ msgid "Maintenance man with a laptop"
+#~ msgstr "Konserwator z laptopem"
+
+#~ msgid "Tool icon"
+#~ msgstr "Ikona narzędzia"
+
+#~ msgid "Not Found"
+#~ msgstr "Nie znaleziono"
+
+#~ msgctxt "label"
+#~ msgid "Search for:"
+#~ msgstr "Wyszukaj:"
+
+#~ msgctxt "placeholder"
+#~ msgid "Search &hellip;"
+#~ msgstr "Szukaj &hellip;"
+
+#~ msgid "By"
+#~ msgstr "Autorstwa"

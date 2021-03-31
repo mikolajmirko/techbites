@@ -26,7 +26,7 @@
                       $category = get_term($menu_item->object_id);
                     ?>
                     <a role="listitem" href="{{ get_category_link($category) }}" class="-m-3 ml-0 flex items-start hover:bg-gray-50 rounded-r-sm focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent py-2 pr-2">
-                      <div class="h-10 w-1 rounded-r-md mr-4 flex-shrink-0" style="background-color: {{ $category_colors[$category->slug] }}"></div>
+                      <div class="h-10 w-2 rounded-r-md mr-4 flex-shrink-0" style="background-color: {{ $category_colors[$category->slug] }}"></div>
                       @include('icon::process.' . $category->slug, ['classes' => 'flex-shrink-0 h-10 w-10 text-dark'])
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">

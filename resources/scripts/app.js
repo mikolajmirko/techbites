@@ -70,4 +70,28 @@ $(function() {
     );
   });
 
+  /**
+   * Search filter scripts
+   */
+  $('.search_category_section input').on('change', function() {
+    let selected = [];
+    $('.search_category_section input:checked').each(function() {
+      selected.push($(this).val());
+    });
+    $('input[name="category_name"]').val(selected.join(','));
+    $('.search_category_section input').parent().children('div').removeClass('w-4');
+    $('.search_category_section input:checked').parent().children('div').addClass('w-4');
+  });
+  $('.search_category_section input:checked').parent().children('div').addClass('w-4');
+
+  $('.search_tag_section input').on('change', function() {
+    let selected = [];
+    $('.search_tag_section input:checked').each(function() {
+      selected.push($(this).val());
+    });
+    $('input[name="tag"]').val(selected.join(','));
+    $(this).parent().toggleClass('checkedLabel');
+  });
+  $('.search_tag_section input:checked').parent().toggleClass('checkedLabel');
+
 });

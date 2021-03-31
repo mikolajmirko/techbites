@@ -41,10 +41,16 @@ module.exports = {
     extend: {
       opacity: ['dark'],
       margin: ['last'],
+      padding: ['hover'],
+      width: ['group-hover'],
       backgroundImage: ['dark'],
       display: ['dark'],
-      rotate: ['dark']
+      rotate: ['dark'],
+      transform: ['group-hover']
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms')
+  ],
 };
