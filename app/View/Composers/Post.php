@@ -38,7 +38,7 @@ class Post extends Composer
      */
     public function is_translated() {
         global $sublanguage;
-        return is_single() ? empty($sublanguage->get_post_field_translation(get_post(), 'post_title', $sublanguage->current_language)) : true;
+        return empty($sublanguage->get_post_field_translation(get_post(), 'post_title', $sublanguage->current_language));
     }
 
     /**

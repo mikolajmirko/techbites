@@ -13,22 +13,22 @@
     x-transition:leave="transition ease-in duration-100"
     x-transition:leave-start="opacity-100 scale-100"
     x-transition:leave-end="opacity-0 scale-90"
-    class="origin-top-right mt-2 transform z-10 right-0 p-6 bg-dark rounded-md relative"
+    class="origin-top-right mt-2 lg:mb-6 transform right-0 p-6 bg-dark rounded-md relative shadow-xl"
   >
-    <form autocomplete="off" action="{{ get_permalink($catalog_page_id) }}" role="search" method="get" aria-lable="{{ __('Searching', 'tb') }}">
-      <label for="searchField-filters" class="pb-2 text-sm sr-only">
-        {{{ __('Search for bites', 'tb') }}}
-      </label>
+    <form autocomplete="off" action="{{ get_permalink($catalog_page_id) }}" role="search" method="get" aria-label="{{ __('Searching', 'tb') }}">
       <div class="search-form">
+        <label for="searchField-filters" class="pb-2 text-sm text-white sr-only">
+          {{{ __('Search for bites', 'tb') }}}
+        </label>
         <input id="searchField-filters" x-ref="searchField" type="search" name="s" placeholder="{{{ __('Search...', 'tb') }}}" value="{{{ get_search_query() }}}" class="flex-grow w-full mb-6 focus:outline-none shadow-md border-2 border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-accent focus:ring-0 rounded-md h-12 px-4 dark:placeholder-black" autocomplete="false">
         <div class="search_category_section mb-6">
-          <h4 class="text-sm text-gray-200 uppercase tracking-wider my-2 focus:outline-none focus:underline" tabindex="0">{{ __('Process phase', 'tb') }}</h4>
+          <label class="text-sm text-gray-200 uppercase tracking-wider block my-2">{{ __('Process phase', 'tb') }}</label>
           @foreach (wp_get_nav_menu_items($category_menu_id) as $menu_item)
             <?php
               $category = get_term($menu_item->object_id);
               $is_selected = isset($_GET['category_name']) ? in_array($category->slug, explode(',', $_GET['category_name'])) : false;
             ?>
-            <label for="cat-{{ $category->slug }}" class="group cursor-pointer rounded-md mx-auto my-0 flex items-center justify-between py-2 pr-2 select-none">
+            <label for="cat-{{ $category->slug }}" class="group cursor-pointer rounded-md mx-auto my-0 flex items-center justify-between py-1 pr-2 select-none">
               <div class="h-8 w-2 group-hover:w-4 rounded-r-md mr-4 -ml-6 flex-shrink-0" style="background-color: {{ $category_colors[$category->slug] }}"></div>
               @include('icon::process.' . $category->slug, ['classes' => 'flex-shrink-0 h-7 w-7 text-white mr-4 transform transition group-hover:translate-x-2'])
               <span class="text-white text-sm flex-grow font-bold tracking-wide">{{ $category->name }}</span>
@@ -37,16 +37,16 @@
           @endforeach
         </div>
         <input type="hidden" name="category_name" value="<?php echo $_GET['category_name'] ?? ''; ?>" />
-        <div class="search_tag_section mb-6">
-          <h4 class="text-sm text-gray-200 uppercase tracking-wider my-2 focus:outline-none focus:underline" tabindex="0">{{ __('Bite tags', 'tb') }}</h4>
+        <div class="search_tag_section mb-4">
+          <label class="text-sm text-gray-200 uppercase tracking-wider block my-2">{{ __('Bite tags', 'tb') }}</label>
           <div class="flex flex-wrap">
             <?php
-              $posttags = get_tags(array('hide_empty' => true, 'orderby' => 'count', 'order' => 'DESC', 'number' => 8));
+              $posttags = get_tags(array('hide_empty' => true, 'orderby' => 'count', 'order' => 'DESC', 'number' => 10));
               if ($posttags) {
                 foreach($posttags as $tag) {
                   $is_selected = isset($_GET['tag']) ? in_array($tag->slug, explode(',', $_GET['tag'])) : false;
                   ?>
-                    <label for="tag-{{ $tag->slug }}" class="cursor-pointer rounded-xl text-sm relative bg-white text-dark hover:bg-gray-200 py-1 px-2 pr-4 mt-2 mr-2 flex items-center select-none focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-dark focus-within:ring-offset-2 focus-within:ring-white dark:focus-within:ring-accent" tabindex="-1">
+                    <label for="tag-{{ $tag->slug }}" class="cursor-pointer rounded-xl text-sm relative bg-white text-dark hover:bg-gray-200 py-1 px-2 pr-4 mb-2 mr-2 flex items-center select-none focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-dark focus-within:ring-offset-2 focus-within:ring-white dark:focus-within:ring-accent" tabindex="-1">
                       <input type="checkbox" id="tag-{{ $tag->slug }}" value="{{ $tag->slug }}" class="opacity-0 absolute" <?= ($is_selected) ? 'checked' : '' ?>>
                       @include('icon::hash', ['classes' => 'mr-2 h-4 w-4 flex-shrink-0'])
                       <span class="">{{ $tag->name }}</span>
@@ -67,15 +67,15 @@
               $secletedOrder = $_GET['order'] ?? 'DESC';
             ?>
             <div>
-              <h4 class="text-sm text-gray-200 uppercase tracking-wider my-2 focus:outline-none focus:underline" tabindex="0">{{ __('Sort by', 'tb') }}</h4>
-              <select class="block appearance-none focus:outline-none shadow-md border-2 border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-accent focus:ring-0 rounded-md text-black py-3 px-4 pr-8 w-full" name="orderby" value="<?php echo $selectedOrderBy; ?>">
+              <label class="text-sm text-gray-200 uppercase tracking-wider block my-2" for="orderby-listbox">{{ __('Sort by', 'tb') }}</label>
+              <select class="block appearance-none focus:outline-none shadow-md border-2 border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-accent focus:ring-0 rounded-md text-black py-3 px-4 pr-8 w-full text-sm" name="orderby" id="orderby-listbox" value="<?php echo $selectedOrderBy; ?>">
                 <option value="date" <?= ($selectedOrderBy == 'date') ? 'selected' : '' ?>>{{ __('Post date', 'tb') }}</option>
                 <option value="title" <?= ($selectedOrderBy == 'title') ? 'selected' : '' ?>>{{ __('Title', 'tb') }}</option>
               </select>
             </div>
             <div>
-              <h4 class="text-sm text-gray-200 uppercase tracking-wider my-2 focus:outline-none focus:underline" tabindex="0">{{ __('Sort order', 'tb') }}</h4>
-              <select class="block appearance-none focus:outline-none shadow-md border-2 border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-accent focus:ring-0 rounded-md text-black py-3 px-4 pr-8 w-full" name="order" value="<?php echo $secletedOrder; ?>">
+              <label class="text-sm text-gray-200 uppercase tracking-wider block my-2" for="order-listbox">{{ __('Sort order', 'tb') }}</label>
+              <select class="block appearance-none focus:outline-none shadow-md border-2 border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-accent focus:ring-0 rounded-md text-black py-3 px-4 pr-8 w-full text-sm" name="order" id="order-listbox" value="<?php echo $secletedOrder; ?>">
                 <option value="DESC" <?= ($secletedOrder == 'DESC') ? 'selected' : '' ?>>{{ __('Descending', 'tb') }}</option>
                 <option value="ASC" <?= ($secletedOrder == 'ASC') ? 'selected' : '' ?>>{{ __('Ascending', 'tb') }}</option>
               </select>

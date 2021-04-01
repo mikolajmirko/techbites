@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tasty bites 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/techbites\n"
-"POT-Creation-Date: 2021-03-31T22:12:54+00:00\n"
-"PO-Revision-Date: 2021-04-01 00:22+0200\n"
+"POT-Creation-Date: 2021-04-01T19:32:59+00:00\n"
+"PO-Revision-Date: 2021-04-01 21:33+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -32,10 +32,6 @@ msgstr ""
 #. Author URI of the theme
 msgid "https://www.linkedin.com/in/mikolaj-mirko/"
 msgstr ""
-
-#: app/filters.php:11
-msgid "Continued"
-msgstr "Więcej"
 
 #: app/setup.php:56
 msgid "Primary Navigation"
@@ -82,6 +78,11 @@ msgstr "Strona"
 msgid "No tags available"
 msgstr "Brak dostępnych tagów"
 
+#: resources/views/partials/content.blade.php:22
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:22
+msgid "Bite thumbnail"
+msgstr "Obrazek wyróżniający gryzka"
+
 #. Template Name of the theme
 msgid "Custom Template"
 msgstr "Niestandardowy szablon"
@@ -90,14 +91,23 @@ msgstr "Niestandardowy szablon"
 msgid "Close icon"
 msgstr "Ikona krzyżyka"
 
+#: storage/framework/views/0af3526aa553b4bf719bd589252ab98e216888e0.php:8
+msgid "Maintenance man with a laptop"
+msgstr "Konserwator z laptopem"
+
 #: storage/framework/views/0b254655eb599dc9fc1f45f7530fa5a625ed33f3.php:8
+#: storage/framework/views/3bf3f087f3b782fa776743734d48a1d1c173d771.php:8
 #: storage/framework/views/9d934eb942bd05c0c9a5a60eccb2f345cde9b7ad.php:3
 msgid "Pen icon"
 msgstr "Ikona pióra"
 
+#: storage/framework/views/0ebb721fb1e50a2fae619bf4ec217c8451b63408.php:3
+msgid "Person icon"
+msgstr "Ikona osoby"
+
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:4
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:14
-#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:21
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:22
 msgid "Search for bites"
 msgstr "Szukaj gryzków"
 
@@ -114,6 +124,7 @@ msgid "Advanced search"
 msgstr "Zaawansowane wyszukiwanie"
 
 #: storage/framework/views/1b04293a5d5f09d9d1abb98a4d7b1e5be2b19059.php:3
+#: storage/framework/views/82bb4796022e376248677e1f46a42410cf9a05e5.php:8
 msgid "Gear icon"
 msgstr "Ikona zębatki"
 
@@ -126,6 +137,7 @@ msgid "Magnifying glass icon"
 msgstr "Ikona szkła powiększającego"
 
 #: storage/framework/views/7bfaea24563e203d8505d40d6ccae207a2669f6d.php:3
+#: storage/framework/views/75d85b1d84814aa71bee280aa1703b90999fadb8.php:8
 #: storage/framework/views/403a99c633862630debce1a3347e983c5b211691.php:8
 msgid "Lightbulb icon"
 msgstr "Ikona żarówki"
@@ -216,6 +228,12 @@ msgstr ""
 "Strona, którą próbujesz wyświetlić, nie istnieje. Użyj nawigacji lub "
 "wyszukiwarki, aby odkryć najlepsze gryzki."
 
+#: storage/framework/views/53e1736f15179357d1c8e37c6e7cf0ab2eaa919a.php:8
+#: storage/framework/views/53323d0a7a69bd7fd7e9f956af79f1507e380375.php:3
+#: storage/framework/views/c2ea43443fbe8d3a65ce87280f7c0e4a868cda73.php:8
+msgid "Comment icon"
+msgstr "Ikona komentarza"
+
 #: storage/framework/views/74c4fb05d8b3cb37c74b038ddf7a721a5bdea5f6.php:16
 msgid "Wave graphical divider"
 msgstr "Fale element graficzny"
@@ -292,6 +310,7 @@ msgid "Off"
 msgstr "Wyłączony"
 
 #: storage/framework/views/8967b3da19a7fd191bede14edb1cf863a119eeab.php:5
+#: storage/framework/views/768805d162bea31a4bffd504e6ad51ac5ba8d7e0.php:8
 #: storage/framework/views/c2b56cae7ecab2528fb753b160385737b7329363.php:8
 msgid "Compass icon"
 msgstr "Ikona kompasu"
@@ -304,11 +323,6 @@ msgstr "Stopka strony"
 #: storage/framework/views/18074b4f4423fd764e1d34b6458eb435a8213c53.php:34
 msgid "Back to top"
 msgstr "Powrót na górę"
-
-#: storage/framework/views/53323d0a7a69bd7fd7e9f956af79f1507e380375.php:3
-#: storage/framework/views/c2ea43443fbe8d3a65ce87280f7c0e4a868cda73.php:8
-msgid "Comment icon"
-msgstr "Ikona komentarza"
 
 #: storage/framework/views/97320f1f7bc2fdc2ebf2c3bbaa3c4b974a9d0bba.php:5
 msgid "Dice icon"
@@ -350,11 +364,16 @@ msgstr "Ikona kontrastu"
 msgid "Menu icon"
 msgstr "Ikona menu"
 
+#: storage/framework/views/cf7dc09fba2a30ce5cc92a05906023fa8dc7c2c6.php:3
+msgid "Calendar icon"
+msgstr "Ikona kalendarza"
+
 #: storage/framework/views/d0866f74ea06c1339f3966af69f11b1a98325d67.php:6
 msgid "Hash icon"
 msgstr "Ikona hashu"
 
 #: storage/framework/views/d6a8d2433e48fcdfc37da7f49594d7211bff40f8.php:3
+#: storage/framework/views/e7201cf2d69da05f3c1ffe0804ddad8f60d77694.php:8
 #: storage/framework/views/fca89c341f4617de21ef3780363ec3ab77f8e9b3.php:8
 msgid "Document icon"
 msgstr "Ikona dokumentu"
@@ -366,6 +385,14 @@ msgstr "Flaga UK"
 #: storage/framework/views/e86ab6c66b205fc784b682ef9501fcbdecc233b7.php:2
 msgid "Skip to content"
 msgstr "Przejdź do treści"
+
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:86
+msgid "Available only in Polish"
+msgstr "Dostępne tylko w języku Polskim"
+
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:92
+msgid "Read more"
+msgstr "Czytaj więcej"
 
 #: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:4
 msgid "Search and filters"
@@ -411,8 +438,8 @@ msgstr "Rosnąco"
 msgid "Search"
 msgstr "Szukaj"
 
-#~ msgid "Maintenance man with a laptop"
-#~ msgstr "Konserwator z laptopem"
+#~ msgid "Continued"
+#~ msgstr "Więcej"
 
 #~ msgid "Tool icon"
 #~ msgstr "Ikona narzędzia"

@@ -11,15 +11,15 @@
   $last = $first + $wp_query->post_count - 1;
 ?>
 @if (isset($variant) && $variant == 'information')
-  <div class="w-full text-gray-600 text-sm py-1">
-    {{ __('Showing') }} @if($max > 1) <strong class="font-semibold">{{ $first }}</strong> - <strong class="font-semibold">{{ $last }}</strong> {{ __('of') }} @endif<strong class="font-semibold">{{ $wp_query->found_posts }}</strong> {{ _n('result', 'results', $wp_query->found_posts) }}
+  <div class="w-full text-gray-700 dark:text-dark text-sm py-3 mb-2">
+    {{ __('Showing', 'tb') }} @if($max > 1) <strong class="font-semibold">{{ $first }}</strong> - <strong class="font-semibold">{{ $last }}</strong> {{ __('of') }} @endif<strong class="font-semibold">{{ $wp_query->found_posts }}</strong> {{ _n('result', 'results', $wp_query->found_posts, 'tb') }}
   </div>
 @else
   <div class="py-4">
     <?php
 
       if($wp_query->max_num_pages > 1) {
-        $activeClass = ' bg-primary text-white font-semibold hover:bg-blue-600';
+        $activeClass = ' bg-primary text-white font-semibold hover:bg-blue-600 dark:bg-dark';
         $normalClass = ' bg-white text-dark font-medium hover:bg-gray-50';
         $srSpan = '<span class="sr-only">' . __('Page', 'tb') . '</span>';
 

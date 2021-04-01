@@ -6,9 +6,9 @@
 
 namespace App;
 
-/* Add "… Continued" to the excerpt */
-add_filter('excerpt_more', function () {
-    return sprintf(' &hellip; <a href="%s">%s</a>', get_permalink(), __('Continued', 'tb'));
+/* Add nothing to the excerpt */
+add_filter('excerpt_more', function() {
+    return '';
 });
 
 /* Disable WordPress Admin Bar for all users */

@@ -5,7 +5,7 @@
         {{-- Website logo --}}
         <div class="flex justify-start">
           <a href="{{ home_url('/') }}" class="rounded-sm p-2 focus:outline-none focus:ring-2 focus:ring-white" id="portalLogo">
-            <span class="sr-only">{{ $siteName }}</span>
+            <span class="sr-only text-white">{{ $siteName }}</span>
             <img class="h-10 w-auto sm:h-14 sm:hidden lg:block select-none" src="@asset('images/logo.svg')" alt="{{ __('Portal logo', 'tb') }}">
             <img class="h-10 w-auto sm:h-12 hidden sm:block lg:hidden select-none" src="@asset('images/logo-icon.svg')" alt="{{ __('Portal logo', 'tb') }}">
           </a>

@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="flex flex-col-reverse lg:flex-row">
-    <main class="flex-grow px-2" aria-label="{{{ __('Website main content', 'tb') }}}">
+    <main class="flex-grow px-3" aria-label="{{{ __('Website main content', 'tb') }}}">
       @include('components.pagination', ['variant' => 'information'])
       @if (!have_posts())
         <p class="text-center">
@@ -17,7 +17,7 @@
       @endwhile
       @include('components.pagination')
     </main>
-    <aside class="flex-shrink-0 lg:w-72 xl:w-96 p-2" aria-lable="{{ __('Sidebar', 'tb') }}">
+    <aside class="flex-shrink-0 lg:w-72 xl:w-96 p-2" aria-label="{{ __('Sidebar', 'tb') }}">
       @include('components.search-filters')
     </aside>
   </div>
