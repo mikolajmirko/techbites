@@ -47,5 +47,8 @@
       @include('components.social-share')
     </div>
   </article>
+  <div>
+    <?php related_posts() ?>
+  </div>
 </div>
 {{-- @endunless --}}

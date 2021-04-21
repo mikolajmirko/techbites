@@ -1,4 +1,4 @@
-<a href="{{ get_permalink() }}" alt="{{ $title }}" title="{{ $title }}" class="max-w-sm mb-6 block rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-accent">
+<a href="{{ get_permalink() }}" alt="{{ $title }}" title="{{ $title }}" class="bite-card max-w-sm mb-6 block rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-accent">
   <article class="w-full rounded-md transition">
     @if (get_the_post_thumbnail_url())
       <?php
@@ -18,15 +18,17 @@
           $thumbnail_title = __('Bite thumbnail', 'tb');
         }
       ?>
-      <div class="h-40 bg-cover bg-center rounded-md p-2" style="background-image: url('{{ get_the_post_thumbnail_url() }}')" title="{{ $thumbnail_title }}"></div>
+      <div class="post-thumbnail h-40 rounded-md overflow-hidden">
+        <div class="w-full h-full bg-gray-500 bg-cover bg-center" style="background-image: url('{{ get_the_post_thumbnail_url() }}')" title="{{ $thumbnail_title }}"></div>
+      </div>
     @endif
     <h2 class="text-dark font-semibold text-xl py-1 px-2">{{ $title }}</h2>
     <div class="post-meta flex flex-row py-1">
-      <span class="text-xs relative text-gray-600 dark:text-dark py-1 px-2 mr-2 flex items-center">
+      <span class="text-xs relative text-gray-600 dark:text-dark py-1 px-2 mr-2 flex items-center" title="{{ __('Author', 'tb') }}">
         @include('icon::user', ['classes' => 'mr-2 h-4 w-4 flex-shrink-0'])
         {{ get_the_author() }}
       </span>
-      <time datetime="{{ get_post_time('c', true) }}" class="text-xs relative text-gray-600 dark:text-dark py-1 px-2 mr-3 flex items-center">
+      <time datetime="{{ get_post_time('c', true) }}" class="text-xs relative text-gray-600 dark:text-dark py-1 px-2 mr-3 flex items-center" title="{{ __('Date', 'tb') }}">
         @include('icon::date', ['classes' => 'mr-2 h-4 w-4 flex-shrink-0'])
         {{ get_the_date() }}
       </time>

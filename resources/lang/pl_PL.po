@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tasty bites 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/techbites\n"
-"POT-Creation-Date: 2021-04-01T19:32:59+00:00\n"
-"PO-Revision-Date: 2021-04-01 21:38+0200\n"
+"POT-Creation-Date: 2021-04-21T18:00:39+00:00\n"
+"PO-Revision-Date: 2021-04-21 20:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -45,15 +45,22 @@ msgstr "Nawigacja Odkrywaj"
 msgid "Bottom Navigation"
 msgstr "Nawigacja dolna"
 
-#: app/View/Composers/Post.php:59
+#: app/View/Composers/Post.php:56
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "minuta"
+msgstr[1] "minuty"
+msgstr[2] "minut"
+
+#: app/View/Composers/Post.php:75
 msgid "Latest Bites"
 msgstr "Ostatnie gryzki"
 
-#: app/View/Composers/Post.php:68
+#: app/View/Composers/Post.php:84
 msgid "Search Results for %s"
 msgstr "Wyniki wyszukiwania dla %s"
 
-#: app/View/Composers/Post.php:74
+#: app/View/Composers/Post.php:90
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:107
 msgid "Page not found"
 msgstr "Nie znaleziono strony"
@@ -68,18 +75,23 @@ msgstr ""
 "Błąd przy próbie załadowania automatycznego. Użyj polecenia <code>composer "
 "install</code>."
 
+#: resources/views/category.blade.php:59
+#: resources/views/components/search-filters.blade.php:57
+#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:60
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:59
+msgid "No tags available"
+msgstr "Brak dostępnych tagów"
+
 #: resources/views/components/pagination.blade.php:24
 #: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:25
 msgid "Page"
 msgstr "Strona"
 
-#: resources/views/components/search-filters.blade.php:57
-#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:59
-msgid "No tags available"
-msgstr "Brak dostępnych tagów"
-
+#: resources/views/components/post-card.blade.php:18
 #: resources/views/partials/content.blade.php:22
+#: storage/framework/views/725af73dd387f504a20fb239ee36a0a7d7ed5bb7.php:18
 #: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:22
+#: yarpp-template-techbites.php:31
 msgid "Bite thumbnail"
 msgstr "Obrazek wyróżniający gryzka"
 
@@ -101,9 +113,46 @@ msgstr "Konserwator z laptopem"
 msgid "Pen icon"
 msgstr "Ikona pióra"
 
+#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:3
+#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:3
+msgid "Website main content"
+msgstr "Główna treść strony"
+
+#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:7
+#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:7
+msgid "Sorry, no results were found."
+msgstr "Nie znaleziono żadnych wyników."
+
+#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:16
+#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:16
+msgid "Sidebar"
+msgstr "Pasek boczny"
+
+#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:29
+msgid "Highlighted bites"
+msgstr "Wyróżnione gryzki"
+
+#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:43
+#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:43
+msgid "Bite tags"
+msgstr "Tagi gryzków"
+
 #: storage/framework/views/0ebb721fb1e50a2fae619bf4ec217c8451b63408.php:3
+#: yarpp-template-techbites.php:43
 msgid "Person icon"
 msgstr "Ikona osoby"
+
+#: storage/framework/views/08b78898f5c1fbe6a94d22bd9bec95f6613610a5.php:2
+msgid "Author"
+msgstr "Autor"
+
+#: storage/framework/views/08b78898f5c1fbe6a94d22bd9bec95f6613610a5.php:4
+msgid "Date"
+msgstr "Data dodania"
+
+#: storage/framework/views/08b78898f5c1fbe6a94d22bd9bec95f6613610a5.php:6
+msgid "Read time"
+msgstr "Czytaj więcej"
 
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:4
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:14
@@ -125,6 +174,7 @@ msgstr "Zaawansowane wyszukiwanie"
 
 #: storage/framework/views/1b04293a5d5f09d9d1abb98a4d7b1e5be2b19059.php:3
 #: storage/framework/views/82bb4796022e376248677e1f46a42410cf9a05e5.php:8
+#: storage/framework/views/c0c10e6cefdb17a5cbbac1e6511f4d41d2028144.php:8
 msgid "Gear icon"
 msgstr "Ikona zębatki"
 
@@ -246,6 +296,38 @@ msgstr "Sekcja informacyjna strony"
 msgid "Browsing a folder with documents"
 msgstr "Folder wypełniony dokumentami"
 
+#: storage/framework/views/172a0ecc3c1239af7ec188cad8886d502eb72c8e.php:2
+msgid "Share via Twitter"
+msgstr "Podziel się na Twitterze"
+
+#: storage/framework/views/172a0ecc3c1239af7ec188cad8886d502eb72c8e.php:3
+msgid "Twitter"
+msgstr "Twitter"
+
+#: storage/framework/views/172a0ecc3c1239af7ec188cad8886d502eb72c8e.php:5
+msgid "Share via Facebook"
+msgstr "Podziel się na Facebooku"
+
+#: storage/framework/views/172a0ecc3c1239af7ec188cad8886d502eb72c8e.php:6
+msgid "Facebook"
+msgstr "Facebook"
+
+#: storage/framework/views/172a0ecc3c1239af7ec188cad8886d502eb72c8e.php:8
+msgid "Share via Linkedin"
+msgstr "Podziel się na Linkedin"
+
+#: storage/framework/views/172a0ecc3c1239af7ec188cad8886d502eb72c8e.php:9
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#: storage/framework/views/172a0ecc3c1239af7ec188cad8886d502eb72c8e.php:11
+msgid "Share via Email"
+msgstr "Podziel się za pomocą maila"
+
+#: storage/framework/views/172a0ecc3c1239af7ec188cad8886d502eb72c8e.php:12
+msgid "E-mail"
+msgstr "E-mail"
+
 #: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:3
 msgid "Website header"
 msgstr "Nagłówek strony"
@@ -340,18 +422,6 @@ msgstr "Mężczyzna z pustym pudłem"
 msgid "PL flag"
 msgstr "Flaga PL"
 
-#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:3
-msgid "Website main content"
-msgstr "Główna treść strony"
-
-#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:7
-msgid "Sorry, no results were found."
-msgstr "Nie znaleziono żadnych wyników."
-
-#: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:19
-msgid "Sidebar"
-msgstr "Pasek boczny"
-
 #: storage/framework/views/c26817c3963d3d42f6dc4d1cd38c8cbe211b6fd9.php:8
 msgid "Laptop with a tech bite"
 msgstr "Laptop wyświetlający gryzek"
@@ -365,6 +435,7 @@ msgid "Menu icon"
 msgstr "Ikona menu"
 
 #: storage/framework/views/cf7dc09fba2a30ce5cc92a05906023fa8dc7c2c6.php:3
+#: yarpp-template-techbites.php:50
 msgid "Calendar icon"
 msgstr "Ikona kalendarza"
 
@@ -386,11 +457,11 @@ msgstr "Flaga UK"
 msgid "Skip to content"
 msgstr "Przejdź do treści"
 
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:86
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:88
 msgid "Available only in Polish"
 msgstr "Dostępne tylko w języku Polskim"
 
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:92
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:94
 msgid "Read more"
 msgstr "Czytaj więcej"
 
@@ -405,10 +476,6 @@ msgstr "Wyszukiwanie"
 #: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:27
 msgid "Process phase"
 msgstr "Fazy procesu"
-
-#: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:43
-msgid "Bite tags"
-msgstr "Tagi gryzków"
 
 #: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:72
 msgid "Sort by"
@@ -437,6 +504,10 @@ msgstr "Rosnąco"
 #: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:89
 msgid "Search"
 msgstr "Szukaj"
+
+#: yarpp-template-techbites.php:11
+msgid "Related bites"
+msgstr "Powiązane gryzki"
 
 #~ msgid "Continued"
 #~ msgstr "Więcej"

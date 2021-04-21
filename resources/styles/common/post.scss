@@ -152,4 +152,9 @@ body.single-post, body.page {
       @apply pt-2 bg-dark;
     }
   }
+  .yarpp-related {
+    a {
+      font-weight: normal !important;
+    }
+  }
 }
