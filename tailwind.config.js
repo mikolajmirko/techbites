@@ -7,6 +7,7 @@ module.exports = {
       './resources/**/*.js',
     ],
   },
+  mode: 'jit',
   darkMode: 'class',
   theme: {
     extend: {

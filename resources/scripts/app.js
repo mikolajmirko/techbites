@@ -3,6 +3,7 @@
  */
 import 'jquery';
 import 'alpinejs';
+import 'sharer.js';
 
 /**
  * Check before page load if high contrast mode is set

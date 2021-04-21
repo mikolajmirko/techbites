@@ -1,8 +1,7 @@
-<p class="byline author text-center text-sm text-gray-700 mb-2">
-  <time class="updated text-gray-600" datetime="{{ get_post_time('c', true) }}">
-    {{ get_the_date() }} |
-  </time>
-  <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author">
-    {{ get_the_author() }}
-  </a>
+<p class="text-center text-sm md:text-base text-gray-600 dark:text-dark mb-8 space-x-2">
+  <span title="{{ __('Author') }}">{{ get_the_author() }}</span>
+  <span>|</span>
+  <time title="{{ __('Date') }}" datetime="{{ get_post_time('c', true) }}">{{ get_the_date() }}</time>
+  <span>|</span>
+  <span title="{{ __('Read time', 'tb') }}">{{ $read_time }}</span>
 </p>

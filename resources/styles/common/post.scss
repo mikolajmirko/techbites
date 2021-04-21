@@ -1,0 +1,155 @@
+body.single-post, body.page {
+  .post-content {
+    & > *:not(.wp-block-image, .wp-block-gallery, .wp-block-audio, .wp-block-video, .wp-block-table) {
+      @apply sm:px-8 md:px-16;
+    }
+    // Paragraphs
+    p {
+      @apply mb-4 font-normal;
+      line-height: 1.625 !important;
+    }
+    & > p:first-child {
+      @apply text-2xl text-left font-light mb-4;
+    }
+    // Headers
+    h1, h2, h3, h4, h5, h6 {
+      @apply mb-1 mt-4;
+    }
+    h1 {
+      @apply text-3xl font-medium;
+    }
+    h2 {
+      @apply text-2xl font-medium;
+    }
+    h3 {
+      @apply text-xl font-semibold;
+    }
+    h4 {
+      @apply text-lg font-semibold;
+    }
+    h5 {
+      @apply text-base font-medium uppercase tracking-wider;
+    }
+    h6 {
+      @apply text-sm font-medium uppercase tracking-wider;
+    }
+    // Lists
+    ul, ol {
+      @apply text-lg font-light mb-4 list-inside ml-2;
+      li {
+        @apply mb-1;
+        ul, ol {
+          @apply ml-4 text-base mt-2;
+        }
+      }
+    }
+    ul {
+      @apply list-disc;
+    }
+    ol {
+      @apply list-decimal;
+    }
+    // Images
+    .wp-block-image {
+      @apply my-6 mt-8;
+      img {
+        @apply rounded-lg;
+      }
+      figcaption {
+        @apply text-gray-600 text-center text-sm;
+      }
+      &.alignfull {
+        @apply -mx-6 md:-mx-16 lg:-mx-24;
+        img {
+          @apply rounded-none;
+        }
+      }
+      .alignleft, .alignright {
+        @apply float-none text-center m-auto;
+      }
+      .alignleft {
+        @apply md:float-left md:mr-6;
+      }
+      .alignright {
+        @apply md:float-right md:ml-6;
+      }
+    }
+    // Quotes
+    blockquote {
+      @apply border-l-4 border-dark text-xl italic font-light text-dark pl-4 my-4;
+      cite {
+        @apply text-base font-semibold text-dark mt-2 not-italic;
+      }
+    }
+    // Code
+    pre {
+      @apply font-mono rounded-lg bg-gray-100 border border-gray-300 p-6 py-4 text-dark;
+    }
+    kbd {
+      @apply font-mono bg-gray-100 border border-gray-300 text-dark py-1 px-2;
+    }
+    // Tables
+    .wp-block-table {
+      @apply my-6 mt-8;
+      table {
+        thead, tfoot {
+          @apply bg-gray-200;
+        }
+        tbody {
+          @apply bg-gray-50;
+        }
+        td, th {
+          @apply px-3 py-2 border border-gray-300;
+        }
+        th {
+          @apply text-left;
+        }
+      }
+      figcaption {
+        @apply text-gray-600 text-center text-sm mt-2;
+      }
+    }
+    // Gallery
+    .wp-block-gallery {
+      @apply my-6 mt-8;
+      .blocks-gallery-grid {
+        @apply ml-0;
+        li {
+          @apply mb-4;
+          img {
+            @apply rounded-md;
+          }
+          figcaption {
+            @apply rounded-b-md text-white text-sm;
+          }
+        }
+      }
+      figcaption {
+        @apply text-gray-600 text-center text-sm;
+      }
+    }
+    // Audio & Video
+    .wp-block-audio, .wp-block-video {
+      @apply my-6 mt-8;
+      figcaption {
+        @apply text-gray-600 text-center text-sm;
+      }
+    }
+    // Layout
+    .wp-block-media-text {
+      @apply my-8;
+      p.has-large-font-size {
+        @apply text-3xl mt-2;
+      }
+    }
+  }
+  &.dark .post-content {
+    figcaption {
+      @apply text-dark;
+    }
+    .blocks-gallery-item__caption {
+      background: none;
+      @apply pt-2 bg-dark;
+    }
+  }
+}

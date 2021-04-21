@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Tasty bites 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/techbites\n"
 "POT-Creation-Date: 2021-04-01T19:32:59+00:00\n"
-"PO-Revision-Date: 2021-04-01 21:33+0200\n"
+"PO-Revision-Date: 2021-04-01 21:38+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -144,7 +144,7 @@ msgstr "Ikona żarówki"
 
 #: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:15
 msgid "Showing"
-msgstr "Znaleziono"
+msgstr "Wyświetlanie"
 
 #: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:15
 msgid "of"

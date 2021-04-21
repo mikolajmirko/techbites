@@ -67,7 +67,7 @@
         </div>
         {{-- Mobile menu button --}}
         <div class="-mr-2 -my-2 md:hidden">
-          <button @click="mobileMenuOpen = true" type="button" class="rounded-md p-2 mr-2 inline-flex items-center justify-center text-white hover:bg-blue-700 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white" x-bind:aria-expanded="mobileMenuOpen ? 'true' : 'false'">
+          <button @click="mobileMenuOpen = true" type="button" class="rounded-md p-2 mr-2 inline-flex items-center justify-center text-white hover:bg-blue-600 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white" x-bind:aria-expanded="mobileMenuOpen ? 'true' : 'false'">
             <span class="sr-only">{{{ __('Open menu', 'tb') }}}</span>
             @include('icon::hamburger', ['classes' => 'h-7 w-7'])
           </button>

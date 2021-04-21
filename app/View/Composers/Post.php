@@ -13,9 +13,11 @@ class Post extends Composer
      */
     protected static $views = [
         'partials.page-header',
+        'partials.entry-meta',
         'partials.content',
         'partials.content-single',
-        'partials.banner'
+        'partials.banner',
+        'components.post-card'
     ];
 
     /**
@@ -27,7 +29,8 @@ class Post extends Composer
     {
         return [
             'title' => $this->title(),
-            'is_translated' => $this->is_translated()
+            'is_translated' => $this->is_translated(),
+            'read_time' => $this->read_time()
         ];
     }
 
@@ -39,6 +42,19 @@ class Post extends Composer
     public function is_translated() {
         global $sublanguage;
         return empty($sublanguage->get_post_field_translation(get_post(), 'post_title', $sublanguage->current_language));
+    }
+
+    /**
+     * Returns read time in minutes
+     *
+     * @return string
+     */
+    public function read_time() {
+        $content = get_the_content();
+        $word_count = str_word_count(strip_tags($content));
+        $readingtime = ceil($word_count / 180);
+        $total = $readingtime . ' ' . _n('minute', 'minutes', $readingtime, 'tb');
+        return $total;
     }
 
     /**

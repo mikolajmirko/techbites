@@ -1,11 +1,131 @@
+@import 'common/fonts';
+
 .block-editor-block-list__layout {
   @apply font-sans;
+  // Paragraphs
+  p {
+    @apply font-normal;
+    line-height: 1.625 !important;
+  }
+  & > p:first-child {
+    @apply text-2xl font-light;
+  }
+  p, ul, ol, figcaption {
+    a {
+      @apply text-primary hover:text-blue-600 underline;
+    }
+  }
+  // Headers
+  h1, h2, h3, h4, h5, h6 {
+    @apply mb-1 mt-4;
+  }
+  h1 {
+    @apply text-3xl font-medium;
+  }
+  h2 {
+    @apply text-2xl font-medium;
+  }
+  h3 {
+    @apply text-xl font-semibold;
+  }
+  h4 {
+    @apply text-lg font-semibold;
+  }
+  h5 {
+    @apply text-base font-medium uppercase tracking-wider;
+  }
+  h6 {
+    @apply text-sm font-medium uppercase tracking-wider;
+  }
+  // Lists
+  ul, ol {
+    @apply text-lg font-light mb-4 list-inside ml-2;
+    li {
+      @apply mb-1;
+      ul, ol {
+        @apply ml-4 text-base mt-2;
+      }
+    }
+  }
+  ul {
+    @apply list-disc;
+  }
+  ol {
+    @apply list-decimal;
+  }
+  // Images
+  .wp-block-image {
+    img {
+      @apply rounded-lg;
+    }
+    figcaption {
+      @apply text-gray-600 text-center text-sm;
+    }
+  }
+  // Quotes
+  blockquote {
+    @apply border-l-2 border-dark text-xl italic font-light text-dark pl-4;
+    .wp-block-quote__citation {
+      @apply text-base font-semibold text-dark mt-2;
+    }
+  }
+  // Code
+  pre {
+    @apply font-mono rounded-lg bg-gray-100 border border-gray-300 p-6 py-4 text-dark;
+    code {
+      background-image: none !important;
+    }
+  }
+  kbd {
+    @apply font-mono bg-gray-100 border border-gray-300 text-dark;
+    padding: 0.25rem 0.5rem !important;
+  }
+  // Tables
+  .wp-block-table {
+    @apply my-6;
+    table {
+      thead, tfoot {
+        @apply bg-gray-200 border-none;
+      }
+      tbody {
+        @apply bg-gray-50;
+      }
+      td, th {
+        @apply px-3 py-2 border border-gray-300;
+      }
+      th {
+        @apply text-left;
+      }
+    }
+    figcaption {
+      @apply text-gray-600 text-center text-sm mt-2;
+    }
+  }
+  // Gallery
+  .wp-block-gallery {
+    .blocks-gallery-grid {
+      img {
+        @apply rounded-md;
+      }
+      figcaption {
+        @apply rounded-b-md text-white text-sm;
+      }
+    }
+    figcaption {
+      @apply text-gray-600 text-center text-sm;
+    }
+  }
+  // Audio & Video
+  .wp-block-audio, .wp-block-video {
+    figcaption {
+      @apply text-gray-600 text-center text-sm;
+    }
+  }
 }
 
 .wp-block {
   @apply max-w-screen-md;
-
   &.editor-post-title__block .editor-post-title__input {
-    @apply font-sans #{!important};
+    @apply font-sans font-bold text-dark pb-0;
   }
 }

@@ -1,4 +1,4 @@
-<a href="{{ get_permalink() }}" alt="{{ $title }}" title="{{ $title }}" class="block rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+<a href="{{ get_permalink() }}" alt="{{ $title }}" title="{{ $title }}" class="block rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-accent">
   <article class="w-full bg-white rounded-md shadow-md transition hover:shadow-lg mb-4">
     <div class="md:flex relative">
       @if($is_translated)
@@ -22,7 +22,7 @@
             $thumbnail_title = __('Bite thumbnail', 'tb');
           }
         ?>
-        <div class="h-48 md:h-auto md:w-56 flex-none bg-cover text-center rounded-t-md md:rounded-t-none md:rounded-tl-md overflow-hidden" style="background-image: url('{{ get_the_post_thumbnail_url() }}')" title="{{ $thumbnail_title }}"></div>
+        <div class="h-48 md:h-auto md:w-56 flex-none bg-cover bg-center text-center rounded-t-md md:rounded-t-none md:rounded-tl-md overflow-hidden" style="background-image: url('{{ get_the_post_thumbnail_url() }}')" title="{{ $thumbnail_title }}"></div>
       @endif
       <div class="p-4 pb-2 flex flex-col justify-between flex-grow leading-normal">
         <div class="mb-8">
@@ -30,7 +30,7 @@
           <p class="text-gray-700 text-sm text-justify">
             <?php
               $ex = esc_html(get_the_excerpt());
-              $max_letters = 260;
+              $max_letters = 240;
               echo strlen($ex) > $max_letters ? substr($ex, 0, $max_letters)."..." : $ex;
             ?>
           </p>
@@ -41,8 +41,8 @@
           ?>
             @if($posttags)
               @foreach($posttags as $tag)
-                <span class="rounded-xl text-sm text-dark bg-gray-200 py-1 px-2 pr-4 mr-2 mb-1 flex items-center">
-                  @include('icon::hash', ['classes' => 'mr-2 h-4 w-4 flex-shrink-0'])
+                <span class="rounded-xl text-xs text-dark bg-gray-200 py-1 px-2 pr-4 mr-2 mb-1 flex items-center">
+                  @include('icon::hash', ['classes' => 'mr-2 h-3 w-3 flex-shrink-0'])
                   {{ $tag->name }}
                 </span>
               @endforeach

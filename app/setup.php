@@ -172,6 +172,7 @@ add_action('pre_get_posts', function ($query) {
         $query->set('posts_per_page', get_option('posts_per_page'));
         $query->set('post_type', 'post');
         $query->set('category__not_in', array(7));
+        $query->set('ignore_sticky_posts', true);
     }
 } );
 
