@@ -1,5 +1,5 @@
-<a href="{{ get_permalink() }}" alt="{{ $title }}" title="{{ $title }}" class="bite-card max-w-sm mb-6 block rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-accent">
-  <article class="w-full rounded-md transition">
+<a href="{{ get_permalink() }}" alt="{{ $title }}" title="{{ $title }}" class="bite-card w-full max-w-lg mb-4 block mx-auto rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-accent">
+  <article class="w-full h-full flex flex-col rounded-md transition">
     @if (get_the_post_thumbnail_url())
       <?php
         $thumbnail_id = get_post_thumbnail_id();
@@ -22,7 +22,7 @@
         <div class="w-full h-full bg-gray-500 bg-cover bg-center" style="background-image: url('{{ get_the_post_thumbnail_url() }}')" title="{{ $thumbnail_title }}"></div>
       </div>
     @endif
-    <h2 class="text-dark font-semibold text-xl py-1 px-2">{{ $title }}</h2>
+    <h2 class="text-dark flex-grow font-semibold text-xl py-1 px-2 mt-1 pb-3">{{ $title }}</h2>
     <div class="post-meta flex flex-row py-1">
       <span class="text-xs relative text-gray-600 dark:text-dark py-1 px-2 mr-2 flex items-center" title="{{ __('Author', 'tb') }}">
         @include('icon::user', ['classes' => 'mr-2 h-4 w-4 flex-shrink-0'])

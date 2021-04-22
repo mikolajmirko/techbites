@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tasty bites 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/techbites\n"
-"POT-Creation-Date: 2021-04-21T18:00:39+00:00\n"
-"PO-Revision-Date: 2021-04-21 20:02+0200\n"
+"POT-Creation-Date: 2021-04-22T19:19:54+00:00\n"
+"PO-Revision-Date: 2021-04-22 21:36+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -75,9 +75,9 @@ msgstr ""
 "Błąd przy próbie załadowania automatycznego. Użyj polecenia <code>composer "
 "install</code>."
 
-#: resources/views/category.blade.php:59
+#: resources/views/category.blade.php:60
 #: resources/views/components/search-filters.blade.php:57
-#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:60
+#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:61
 #: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:59
 msgid "No tags available"
 msgstr "Brak dostępnych tagów"
@@ -114,7 +114,10 @@ msgid "Pen icon"
 msgstr "Ikona pióra"
 
 #: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:3
+#: storage/framework/views/1c4b70a8c23d34e86c1d749b7bb744ae7b4c7714.php:3
+#: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:2
 #: storage/framework/views/bd64805212962c656dd5d55ec3f674b12c701fcf.php:3
+#: storage/framework/views/e6c8850c4abce556b5cc30562c4753152510453f.php:3
 msgid "Website main content"
 msgstr "Główna treść strony"
 
@@ -128,11 +131,11 @@ msgstr "Nie znaleziono żadnych wyników."
 msgid "Sidebar"
 msgstr "Pasek boczny"
 
-#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:29
+#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:30
 msgid "Highlighted bites"
 msgstr "Wyróżnione gryzki"
 
-#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:43
+#: storage/framework/views/0bfc5d6a045246ea8681f57261ba19713656fd86.php:44
 #: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:43
 msgid "Bite tags"
 msgstr "Tagi gryzków"
@@ -143,10 +146,16 @@ msgid "Person icon"
 msgstr "Ikona osoby"
 
 #: storage/framework/views/08b78898f5c1fbe6a94d22bd9bec95f6613610a5.php:2
+#: storage/framework/views/725af73dd387f504a20fb239ee36a0a7d7ed5bb7.php:27
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:75
+#: yarpp-template-techbites.php:40
 msgid "Author"
 msgstr "Autor"
 
 #: storage/framework/views/08b78898f5c1fbe6a94d22bd9bec95f6613610a5.php:4
+#: storage/framework/views/725af73dd387f504a20fb239ee36a0a7d7ed5bb7.php:32
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:80
+#: yarpp-template-techbites.php:47
 msgid "Date"
 msgstr "Data dodania"
 
@@ -185,6 +194,42 @@ msgstr "Ikona otwartej książki"
 #: storage/framework/views/2f64623d929eb10a132f838addd91b7cd1adca10.php:4
 msgid "Magnifying glass icon"
 msgstr "Ikona szkła powiększającego"
+
+#: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:13
+msgid "Discover the process"
+msgstr "Odkryj proces wytwórczy"
+
+#: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:14
+msgid "Every phase of the development process can improve user experience."
+msgstr ""
+"Każdy etap procesu kryje w sobie potencjał na rozwój dostępności i "
+"użyteczności."
+
+#: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:25
+#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:88
+msgid "Close menu"
+msgstr "Zamknij menu"
+
+#: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:47
+#: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:48
+msgid "Discover this phase"
+msgstr "Odkrywaj ten etap"
+
+#: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:72
+msgid "The new and tasty bites"
+msgstr "Świeże i smaczne gryzki"
+
+#: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:73
+msgid "Check out the latest posts and always expect more to come!"
+msgstr "Zobacz ostatnie wpisy i oczekuj kolejnych już niebawem!"
+
+#: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:96
+msgid "Random snacks"
+msgstr "Losowe przekąski"
+
+#: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:97
+msgid "You don't know what you fancy? Look at these!"
+msgstr "Nie wiesz o czym poczytać? Może to Cię zaciekawi!"
 
 #: storage/framework/views/7bfaea24563e203d8505d40d6ccae207a2669f6d.php:3
 #: storage/framework/views/75d85b1d84814aa71bee280aa1703b90999fadb8.php:8
@@ -355,10 +400,6 @@ msgstr "Losowy gryzek"
 #: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:73
 msgid "Open menu"
 msgstr "Otwórz menu"
-
-#: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:88
-msgid "Close menu"
-msgstr "Zamknij menu"
 
 #: storage/framework/views/2710e070f39881ed7898ae0385939a8aac9fd447.php:3
 msgid "Message icon"

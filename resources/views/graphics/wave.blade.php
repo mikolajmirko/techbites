@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 96" class="{{$classes ?? ''}}" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 96" class="{{$classes ?? ''}} pointer-events-none" aria-hidden="true">
   <g transform="translate(1,-49)">
     <path
       style="fill:#f7fafc;fill-opacity:1;fill-rule:nonzero;stroke:none;"

@@ -4,7 +4,7 @@
       <div role="region" aria-label="{{{ __('Page hero', 'tb') }}}" class="flex flex-col w-full lg:w-1/2 xl:w-2/5 justify-center items-start text-center md:text-left lg:pr-12 xl:pr-0 lg:mb-16">
         <h1 class="my-4 text-3xl xl:text-4xl font-bold leading-tight w-full text-white">{!! $title !!}</h1>
         @isset($description)
-          <p class="leading-normal text-medium mb-4 text-white xl:text-lg">{{ $description }}</p>
+          <p class="leading-normal text-medium mb-4 text-white xl:text-lg text-center w-full md:text-left">{{ $description }}</p>
         @endisset
         {{ $slot }}
       </div>

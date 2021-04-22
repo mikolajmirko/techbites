@@ -35,7 +35,7 @@ Author: Mikołaj Mirko
                     <div class="w-full h-full bg-gray-500 bg-cover bg-center" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')" title="<?php echo $thumbnail_title; ?>"></div>
                 </div>
                 <?php endif; ?>
-                <h2 class="text-dark flex-grow font-semibold text-xl py-1 px-2 mt-1"><?php echo get_the_title(); ?></h2>
+                <h2 class="text-dark flex-grow font-semibold text-xl py-1 px-2 mt-1 pb-3"><?php echo get_the_title(); ?></h2>
                 <div class="post-meta flex flex-row py-1">
                     <span class="text-xs relative text-gray-600 dark:text-dark py-1 px-2 mr-2 flex items-center" title="<?php echo __('Author', 'tb'); ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" aria-hidden="true">

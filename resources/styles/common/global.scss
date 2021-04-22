@@ -7,7 +7,7 @@ body {
   &.single article .post-content a {
     @apply text-primary hover:text-blue-600 underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1 rounded-sm;
   }
-  &.single.dark .post-content article a {
+  &.single.dark article .post-content a {
     @apply text-accent hover:text-pink-600 focus:ring-accent;
   }
   a.bite-card {
@@ -50,4 +50,44 @@ footer ul li.menu-item a {
 
 .search_category_section label div {
   transition: width 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.home {
+  .diagram-info-card {
+    h2 {
+      transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  #diagram_svg g .hex-bg {
+    fill: #ffffff;
+  }
+  #diagram_svg g a:not(#user_hex) {
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    cursor: pointer;
+    &#study_hex {
+      transform-origin: bottom right;
+    }
+    &#concept_hex {
+      transform-origin: bottom left;
+    }
+    &#evaluation_hex {
+      transform-origin: top right;
+    }
+    &#development_hex {
+      transform-origin: top left;
+    }
+    &#vision_hex {
+      transform-origin: right;
+    }
+    &#design_hex {
+      transform-origin: left;
+    }
+    &:hover, &:focus {
+      transform: scale(1.03);
+    }
+    &:focus path:nth-child(2) {
+      stroke-width: 5px;
+    }
+  }
 }

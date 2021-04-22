@@ -21,7 +21,8 @@
           'posts_per_page' => 3,
           'post__in' => get_option('sticky_posts'),
           'category__in' => $category->term_id,
-          'ignore_sticky_posts' => 1
+          'ignore_sticky_posts' => 1,
+          'post_type' => 'post'
         );
         $query = new WP_Query($args);
       ?>

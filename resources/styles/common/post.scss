@@ -83,7 +83,7 @@ body.single-post, body.page {
     }
     // Code
     pre {
-      @apply font-mono rounded-lg bg-gray-100 border border-gray-300 p-6 py-4 text-dark;
+      @apply font-mono rounded-lg bg-gray-100 border border-gray-300 p-6 py-4 text-dark mb-6;
     }
     kbd {
       @apply font-mono bg-gray-100 border border-gray-300 text-dark py-1 px-2;
