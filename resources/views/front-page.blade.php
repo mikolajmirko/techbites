@@ -11,7 +11,6 @@
       }
     ?>
     {{-- Category diagram --}}
-    @include('graphic::hex_bg')
     <h1 class="text-dark font-semibold text-3xl mb-1 mt-4 lg:mt-2 text-center">{{ __('Discover the process', 'tb') }}</h1>
     <p class="text-gray-600 dark:text-dark w-full text-center mb-6 text-sm px-4">{{ __('Every phase of the development process can improve user experience.', 'tb') }}</p>
     <div class="px-4 lg:px-12 lg:py-8 flex flex-wrap lg:flex-nowrap">

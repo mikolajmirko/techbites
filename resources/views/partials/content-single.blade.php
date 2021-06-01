@@ -2,7 +2,7 @@
 <div class="max-w-5xl mx-auto mb-10">
   <article @php(post_class())>
     <header>
-      <h1 class="text-3xl md:text-4xl text-dark text-center py-6 pb-4 px-8 font-semibold">
+      <h1 class="text-3xl md:text-5xl text-dark text-center py-6 pb-4 px-8 font-semibold">
         {{ $title }}
       </h1>
       @include('partials/entry-meta')
@@ -26,7 +26,7 @@
     @endif
     <div class="bg-white rounded-xl shadow-xl w-full py-16 px-6 md:px-16 lg:px-24">
       @if(has_post_thumbnail())
-        {!! the_post_thumbnail('post-thumbnail', ['class' => 'rounded-lg mb-6']) !!}
+        {!! the_post_thumbnail('post-thumbnail', ['class' => 'rounded-lg mb-6 mx-auto']) !!}
       @endif
       <div class="post-content">
         @php(the_content())
@@ -48,7 +48,7 @@
     </div>
   </article>
   <div>
-    <?php related_posts() ?>
+    <?php yarpp_related() ?>
   </div>
 </div>
 {{-- @endunless --}}

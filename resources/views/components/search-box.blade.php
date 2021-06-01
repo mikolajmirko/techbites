@@ -10,7 +10,7 @@
 @endif
 
   <form autocomplete="off" action="{{ get_permalink($catalog_page_id) }}" role="search" method="get">
-    <label for="searchField-{{$variant}}{{ isset($mobile) ? '-mobile' : '' }}" class="pb-2 text-sm sr-only">
+    <label for="searchField-{{$variant}}{{ isset($mobile) ? '-mobile' : '' }}" class="pb-2 text-sm sr-only text-white">
       {{{ __('Search for bites', 'tb') }}}
     </label>
     <div class="flex items-center search-form">

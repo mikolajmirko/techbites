@@ -6,6 +6,11 @@
 
 <div class="flex-grow">
   <div class="w-full">
+    @if (is_front_page())
+      <div class="hidden md:flex h-full w-full overflow-hidden absolute justify-center" style="z-index: -1">
+        @include('graphic::hex_bg')
+      </div>
+    @endif
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <a id="mainLink" class="block relative -top-24 invisible"></a>
       @yield('content')
