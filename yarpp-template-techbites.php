@@ -14,7 +14,7 @@ Author: Mikołaj Mirko
     <?php while (have_posts()) : the_post(); ?>
         <a href="<?php echo get_permalink(); ?>" alt="<?php echo get_the_title(); ?>" title="<?php echo get_the_title(); ?>" class="bite-card rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-accent">
             <article class="h-full flex flex-col rounded-md">
-                <div class="post-thumbnail h-40 bg-cover bg-center rounded-md overflow-hidden">
+                <div class="post-thumbnail h-56 bg-cover bg-center rounded-md overflow-hidden">
                     <?php if (get_the_post_thumbnail_url()) :
                         $thumbnail_id = get_post_thumbnail_id();
                         $thumbnail = get_post($thumbnail_id);
@@ -45,7 +45,7 @@ Author: Mikołaj Mirko
                     <?php endif; ?>
                 </div>
                 <h2 class="text-dark flex-grow font-semibold text-xl py-1 px-2 mt-1 pb-3"><?php echo get_the_title(); ?></h2>
-                <div class="post-meta flex flex-row py-1">
+                <div class="post-meta flex flex-row py-1 flex-wrap">
                     <span class="text-xs relative text-gray-600 dark:text-dark py-1 px-2 mr-2 flex items-center" title="<?php echo __('Author', 'tb'); ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4 flex-shrink-0 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" aria-hidden="true">
                             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
@@ -60,6 +60,20 @@ Author: Mikołaj Mirko
                         </svg>
                         <?php echo get_the_date(); ?>
                     </time>
+                    <span class="text-xs relative text-gray-600 dark:text-black py-1 px-2 mr-3 flex items-center" title="<?php echo __('Read time', 'tb'); ?>">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4 flex-shrink-0 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                            <title><?php echo __('Clock icon', 'tb'); ?></title>
+                        </svg>
+                        <?php
+                            $content = get_post_field('post_content', get_the_ID());
+                            $word_count = str_word_count(strip_tags($content));
+                            $readingtime = ceil($word_count / 180);
+                            $total = $readingtime . ' ' . _n('minute', 'minutes', $readingtime, 'tb');
+                            echo $total;
+                        ?>
+                    </span>
                 </div>
             </article>
         </a>

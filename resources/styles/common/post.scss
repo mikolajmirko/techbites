@@ -5,41 +5,42 @@ body.single-post, body.page {
     }
     // Paragraphs
     p {
-      @apply mb-4 font-normal;
-      line-height: 1.625 !important;
+      @apply mb-8 font-normal;
+      font-size: 1.12em;
+      line-height: 1.8 !important;
     }
     & > p:first-child {
-      @apply text-2xl text-left font-light mb-4;
+      @apply text-2xl text-left font-light mb-6;
     }
     // Headers
     h1, h2, h3, h4, h5, h6 {
-      @apply mb-1 mt-4;
+      @apply mb-8 mt-12;
     }
     h1 {
-      @apply text-3xl font-medium;
+      @apply text-4xl font-medium;
     }
     h2 {
-      @apply text-2xl font-medium;
+      @apply text-3xl font-medium;
     }
     h3 {
-      @apply text-xl font-semibold;
+      @apply text-2xl font-semibold;
     }
     h4 {
-      @apply text-lg font-semibold;
+      @apply text-xl font-semibold;
     }
     h5 {
-      @apply text-base font-medium uppercase tracking-wider;
+      @apply text-lg font-medium uppercase tracking-wider;
     }
     h6 {
-      @apply text-sm font-medium uppercase tracking-wider;
+      @apply text-base font-medium uppercase tracking-wider;
     }
     // Lists
     ul, ol {
-      @apply text-lg font-light mb-4 list-inside ml-2;
+      @apply text-xl font-light mb-8 list-inside ml-4;
       li {
-        @apply mb-1;
+        @apply mb-3;
         ul, ol {
-          @apply ml-4 text-base mt-2;
+          @apply ml-4 text-lg mt-2;
         }
       }
     }
@@ -50,13 +51,16 @@ body.single-post, body.page {
       @apply list-decimal;
     }
     // Images
+    a.simplelightbox {
+      @apply block;
+    }
     .wp-block-image {
       @apply my-6 mt-8;
       img {
         @apply rounded-lg;
       }
       figcaption {
-        @apply text-gray-600 text-center text-sm;
+        @apply text-gray-600 text-center text-base mt-4;
       }
       &.alignfull {
         @apply -mx-6 md:-mx-16 lg:-mx-24;
@@ -76,7 +80,7 @@ body.single-post, body.page {
     }
     // Quotes
     blockquote {
-      @apply border-l-4 border-dark text-xl italic font-light text-dark pl-4 my-4;
+      @apply border-l-4 border-dark text-xl italic font-light text-dark pl-4 my-6;
       cite {
         @apply text-base font-semibold text-dark mt-2 not-italic;
       }
@@ -142,6 +146,22 @@ body.single-post, body.page {
         @apply text-3xl mt-2;
       }
     }
+    //Bite link
+    .bite-link {
+      @apply bg-dark text-white transition-colors block relative p-6 rounded-md no-underline mb-8;
+      &:hover {
+        background-color: #2c2b3f;
+      }
+      h3 {
+        @apply m-0 text-white w-5/6;
+      }
+      h4 {
+        @apply m-0 text-secondary underline text-sm overflow-ellipsis overflow-hidden w-5/6 font-normal;
+      }
+      svg {
+        @apply w-6 h-6 text-white absolute top-5 right-6;
+      }
+    }
   }
   &.dark .post-content {
     figcaption {
@@ -150,6 +170,9 @@ body.single-post, body.page {
     .blocks-gallery-item__caption {
       background: none;
       @apply pt-2 bg-dark;
+    }
+    .bite-link h4 {
+      @apply text-light;
     }
   }
   .yarpp-related {

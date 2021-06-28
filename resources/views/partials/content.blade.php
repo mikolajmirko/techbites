@@ -39,7 +39,7 @@
         </div>
         <div class="inline-flex flex-wrap">
           <?php
-            $posttags = get_the_tags();
+            $posttags = array_slice(get_the_tags(), 0, 4);
           ?>
             @if($posttags)
               @foreach($posttags as $tag)
@@ -79,6 +79,10 @@
           @include('icon::date', ['classes' => 'mr-3 h-4 w-4 flex-shrink-0'])
           {{ get_the_date() }}
         </time>
+        <span class="text-sm relative text-dark dark:text-black py-1 px-2 mr-3 flex items-center" title="{{ __('Read time', 'tb') }}">
+          @include('icon::clock', ['classes' => 'mr-3 h-4 w-4 flex-shrink-0'])
+          {{ $read_time }}
+        </span>
         @if($is_translated)
           <span class="text-sm relative text-dark dark:text-black py-1 px-2 flex items-center">
             @include('icon::flags.pl', ['classes' => 'mr-3 h-4 w-5 flex-shrink-0 border border-gray-400'])

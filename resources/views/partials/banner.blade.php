@@ -52,9 +52,14 @@
 @elseif (is_404())
   <x-hero
     title="{{{ __('Page not found', 'tb') }}}"
-    description="{{{ __('Sorry, but the page you are trying to view does not exist. Use main navigation or search to discover the best bites.', 'tb') }}}"
+    description="{{{ __('Someone was very hungry and bit too much! The page you are trying to view does not exist. Use main navigation or search to discover the best bites.', 'tb') }}}"
     graphic="404"
-  />
+  >
+    <a href="{{ home_url('/') }}" class="flex h-12 px-5 justify-center items-center shadow-md rounded-md text-white bg-dark dark:bg-accent hover:dark dark:hover:bg-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-accent" aria-label="{{{ __('Home page', 'tb') }}}">
+      @include('icon::arrow', ['classes' => 'h-6 w-6 transform -rotate-90'])
+      <span class="ml-3">{{ __('Home page', 'tb') }}</span>
+    </a>
+  </x-hero>
 @else
   <x-hero />
 @endif

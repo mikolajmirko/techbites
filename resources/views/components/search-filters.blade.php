@@ -20,6 +20,7 @@
         <label for="searchField-filters" class="pb-2 text-sm text-white sr-only">
           {{{ __('Search for bites', 'tb') }}}
         </label>
+        <label class="text-sm text-gray-200 uppercase tracking-wider block mb-2">{{ __('Searched phrase', 'tb') }}</label>
         <input id="searchField-filters" x-ref="searchField" type="search" name="s" placeholder="{{{ __('Search...', 'tb') }}}" value="{{{ get_search_query() }}}" class="flex-grow w-full mb-6 focus:outline-none shadow-md border-2 border-gray-300 dark:border-gray-500 focus:border-primary dark:focus:border-accent focus:ring-0 rounded-md h-12 px-4 dark:placeholder-black" autocomplete="false">
         <div class="search_category_section mb-6">
           <label class="text-sm text-gray-200 uppercase tracking-wider block my-2">{{ __('Process phase', 'tb') }}</label>

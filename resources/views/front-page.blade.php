@@ -81,7 +81,7 @@
     <?php
       wp_reset_query();
     ?>
-    {{-- Newest --}}
+    {{-- Random --}}
     <?php
       $category = get_queried_object();
       $args = array(

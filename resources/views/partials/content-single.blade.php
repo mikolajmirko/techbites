@@ -1,8 +1,8 @@
 {{-- @unless ($is_translated) --}}
-<div class="max-w-5xl mx-auto mb-10">
+<div class="max-w-6xl mx-auto mb-10">
   <article @php(post_class())>
     <header>
-      <h1 class="text-3xl md:text-5xl text-dark text-center py-6 pb-4 px-8 font-semibold">
+      <h1 class="text-3xl md:text-5xl text-dark text-center py-8 pb-4 px-8 font-semibold">
         {{ $title }}
       </h1>
       @include('partials/entry-meta')
@@ -48,7 +48,10 @@
     </div>
   </article>
   <div>
-    <?php yarpp_related() ?>
+    <?php
+      if(function_exists('yarpp_related'))
+        yarpp_related();
+    ?>
   </div>
 </div>
 {{-- @endunless --}}

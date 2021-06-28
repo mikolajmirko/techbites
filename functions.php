@@ -110,4 +110,11 @@ add_filter('login_headerurl', 'my_login_logo_url');
 function my_login_logo_url_title() {
     return 'TechBites';
 }
-add_filter('login_headertitle', 'my_login_logo_url_title');
+add_filter('login_headertext', 'my_login_logo_url_title');
+
+function tb_setting_404_callback_function() {
+    $setting = get_option('tb_setting_404_post');
+    ?>
+    <input type="text" name="tb_setting_404_post" value="<?php echo isset( $setting ) ? esc_attr( $setting ) : ''; ?>">
+    <?php
+}

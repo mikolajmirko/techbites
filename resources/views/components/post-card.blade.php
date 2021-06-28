@@ -1,6 +1,6 @@
 <a href="{{ get_permalink() }}" alt="{{ $title }}" title="{{ $title }}" class="bite-card w-full max-w-lg mb-4 block mx-auto rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-accent">
   <article class="w-full h-full flex flex-col rounded-md transition">
-    <div class="post-thumbnail h-40 rounded-md overflow-hidden">
+    <div class="post-thumbnail h-56 rounded-md overflow-hidden">
       @if (get_the_post_thumbnail_url())
         <?php
           $thumbnail_id = get_post_thumbnail_id();
@@ -25,7 +25,7 @@
       @endif
     </div>
     <h2 class="text-dark font-semibold text-xl py-1 px-2 mt-1 pb-3">{{ $title }}</h2>
-    <div class="post-meta flex flex-row py-1">
+    <div class="post-meta flex flex-row py-1 flex-wrap">
       <span class="text-xs relative text-gray-600 dark:text-dark py-1 px-2 mr-2 flex items-center" title="{{ __('Author', 'tb') }}">
         @include('icon::user', ['classes' => 'mr-2 h-4 w-4 flex-shrink-0'])
         {{ get_the_author() }}
@@ -34,6 +34,10 @@
         @include('icon::date', ['classes' => 'mr-2 h-4 w-4 flex-shrink-0'])
         {{ get_the_date() }}
       </time>
+      <span class="text-xs relative text-gray-600 dark:text-black py-1 px-2 mr-0 flex items-center" title="{{ __('Read time', 'tb') }}">
+        @include('icon::clock', ['classes' => 'mr-2 h-4 w-4 flex-shrink-0'])
+        {{ $read_time }}
+      </span>
     </div>
   </article>
 </a>

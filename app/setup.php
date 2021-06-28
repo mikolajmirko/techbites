@@ -197,6 +197,18 @@ add_action('template_redirect', function() {
     }
 });
 
+add_action('admin_init', function() {
+    register_setting('general', 'tb_setting_404_post');
+    add_settings_field(
+        'tb_setting_404_field',
+        '404 post ID',
+        'tb_setting_404_callback_function',
+        'general',
+        'default',
+        array( 'label_for' => 'tb_setting_404_post' )
+    );
+});
+
 /**
  * Add admin url for ajax actions used in js files.
  */
@@ -209,4 +221,3 @@ add_action( 'wp_head', function() {
 </script>
 <?php
 });
-

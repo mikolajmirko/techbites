@@ -54,7 +54,7 @@ class Post extends Composer
      * @return string
      */
     public function read_time() {
-        $content = get_the_content();
+        $content = get_post_field('post_content', get_the_ID());
         $word_count = str_word_count(strip_tags($content));
         $readingtime = ceil($word_count / 180);
         $total = $readingtime . ' ' . _n('minute', 'minutes', $readingtime, 'tb');
