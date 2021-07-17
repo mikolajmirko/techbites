@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-06-23T12:47:26+00:00\n"
+"POT-Creation-Date: 2021-07-17T16:33:38+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 
@@ -42,6 +42,7 @@ msgid "Bottom Navigation"
 msgstr ""
 
 #: app/View/Composers/Post.php:60
+#: yarpp-template-techbites.php:73
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] ""
@@ -81,9 +82,9 @@ msgid "Page"
 msgstr ""
 
 #: resources/views/components/post-card.blade.php:19
-#: resources/views/partials/content.blade.php:22
+#: resources/views/partials/content.blade.php:19
 #: storage/framework/views/725af73dd387f504a20fb239ee36a0a7d7ed5bb7.php:19
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:22
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:19
 #: yarpp-template-techbites.php:32
 msgid "Bite thumbnail"
 msgstr ""
@@ -141,20 +142,22 @@ msgstr ""
 
 #: storage/framework/views/08b78898f5c1fbe6a94d22bd9bec95f6613610a5.php:2
 #: storage/framework/views/725af73dd387f504a20fb239ee36a0a7d7ed5bb7.php:29
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:75
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:59
 #: yarpp-template-techbites.php:49
 msgid "Author"
 msgstr ""
 
 #: storage/framework/views/08b78898f5c1fbe6a94d22bd9bec95f6613610a5.php:4
 #: storage/framework/views/725af73dd387f504a20fb239ee36a0a7d7ed5bb7.php:34
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:80
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:64
 #: yarpp-template-techbites.php:56
 msgid "Date"
 msgstr ""
 
 #: storage/framework/views/08b78898f5c1fbe6a94d22bd9bec95f6613610a5.php:6
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:85
+#: storage/framework/views/725af73dd387f504a20fb239ee36a0a7d7ed5bb7.php:39
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:69
+#: yarpp-template-techbites.php:63
 msgid "Read time"
 msgstr ""
 
@@ -267,7 +270,7 @@ msgid "Technology doesn't bite"
 msgstr ""
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:3
-msgid "Discover and share knowledge about software usability, technology availability and interesting sources of resources."
+msgid "Discover valuable knowledge about software usability, technology accessibility and interesting sources."
 msgstr ""
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:41
@@ -280,7 +283,7 @@ msgid "Bite catalog"
 msgstr ""
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:68
-msgid "Search among dozens of bites containing rich and detailed knowledge in the field of IT product development."
+msgid "Search among dozens of bites containing rich and detailed knowledge from the field of IT product development."
 msgstr ""
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:81
@@ -288,7 +291,7 @@ msgid "Our goal"
 msgstr ""
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:81
-msgid "We hope to popularize the concepts of usability and accessibility in IT projects and change the belief that if something is aesthetic it must be inaccessible."
+msgid "We hope to popularize the concepts of usability and accessibility in IT projects and highlight their importance."
 msgstr ""
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:94
@@ -296,7 +299,7 @@ msgid "We have a small problem"
 msgstr ""
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:94
-msgid "Sorry, this bite has no translation in selected language. Try a different one or search for other bites."
+msgid "Sorry, this bite has no translation in selected language. Try a different one, search for other bites, or try understanding it in this weird language below."
 msgstr ""
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:107
@@ -310,7 +313,6 @@ msgstr ""
 
 #: storage/framework/views/53e1736f15179357d1c8e37c6e7cf0ab2eaa919a.php:8
 #: storage/framework/views/53323d0a7a69bd7fd7e9f956af79f1507e380375.php:3
-#: storage/framework/views/c2ea43443fbe8d3a65ce87280f7c0e4a868cda73.php:8
 msgid "Comment icon"
 msgstr ""
 
@@ -419,7 +421,6 @@ msgstr ""
 
 #: storage/framework/views/8967b3da19a7fd191bede14edb1cf863a119eeab.php:5
 #: storage/framework/views/768805d162bea31a4bffd504e6ad51ac5ba8d7e0.php:8
-#: storage/framework/views/c2b56cae7ecab2528fb753b160385737b7329363.php:8
 msgid "Compass icon"
 msgstr ""
 
@@ -441,6 +442,7 @@ msgid "Sharing information through technology"
 msgstr ""
 
 #: storage/framework/views/ab3f4b1d3353cf38286e81385fdc85c574b646d7.php:4
+#: yarpp-template-techbites.php:67
 msgid "Clock icon"
 msgstr ""
 
@@ -462,11 +464,6 @@ msgstr ""
 
 #: storage/framework/views/ca1189a81fea40b70778408f3ecc6405bc6ad459.php:3
 msgid "Menu icon"
-msgstr ""
-
-#: storage/framework/views/cd18903717e22835043cdd11ad0318639fa30802.php:5
-#: yarpp-template-techbites.php:42
-msgid "No image"
 msgstr ""
 
 #: storage/framework/views/cf7dc09fba2a30ce5cc92a05906023fa8dc7c2c6.php:3
@@ -492,11 +489,11 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:93
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:77
 msgid "Available only in Polish"
 msgstr ""
 
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:99
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:82
 msgid "Read more"
 msgstr ""
 
@@ -509,7 +506,7 @@ msgid "Searching"
 msgstr ""
 
 #: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:25
-msgid "Searched phrase "
+msgid "Searched phrase"
 msgstr ""
 
 #: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:28
@@ -546,4 +543,8 @@ msgstr ""
 
 #: yarpp-template-techbites.php:11
 msgid "Related bites"
+msgstr ""
+
+#: yarpp-template-techbites.php:42
+msgid "No image"
 msgstr ""

@@ -1,4 +1,4 @@
-<div class="bg-primary bg-gradient-to-b from-primary via-primary to-primaryAltered dark:bg-none dark:bg-dark transition">
+<div class="bg-primary bg-gradient-to-b from-primary via-primary to-primaryAltered dark:bg-none dark:bg-dark">
   <div x-data="{ mobileMenuOpen: false}" class="fixed z-40 w-full" id="stickyHeader">
     <header class="max-w-7xl mx-auto px-4 sm:px-6" aria-label="{{{ __('Website header', 'tb') }}}">
       <div class="flex justify-between items-center py-4 md:justify-start md:space-x-8">
@@ -18,7 +18,7 @@
               @include('icon::chevron', ['classes' => 'text-gray-50 h-5 w-5 hover:text-gray-100 hidden lg:block transform transition', 'attributes' => 'x-bind:class={"rotate-180":discoveryMenuOpen}'])
               <span class="lg:ml-3 mb-1 whitespace-nowrap">{{ __('Discover', 'tb') }}</span>
             </button>
-            <div x-show="discoveryMenuOpen" @click.away="discoveryMenuOpen = false" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-lg sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+            <div x-cloak x-show="discoveryMenuOpen" @click.away="discoveryMenuOpen = false" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-lg sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
               <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div class="relative grid gap-6 bg-white pr-8 py-8 sm:gap-8" role="navigation" aria-label="{{{ __('Category navigation', 'tb') }}}">
                   @foreach (wp_get_nav_menu_items($category_menu_id) as $menu_item)
@@ -74,7 +74,7 @@
         </div>
       </div>
     </header>
-    <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = true" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90"      x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+    <div x-cloak x-show="mobileMenuOpen" @click.away="mobileMenuOpen = true" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
       <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50 dark:divide-gray-300">
         {{-- Website logo & close button --}}
         <div class="flex items-center justify-between pt-5 pb-5 px-6">

@@ -1,9 +1,6 @@
 <a href="{{ get_permalink() }}" alt="{{ $title }}" title="{{ $title }}" class="bite-card block rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-accent">
   <article class="w-full bg-white rounded-md shadow-md transition hover:shadow-lg mb-4">
     <div class="md:flex relative">
-      @if($is_translated)
-        <div class="bg-dark bg-opacity-25 w-full h-full absolute bottom-0 left-0 rounded-t-md"></div>
-      @endif
       @if (get_the_post_thumbnail_url())
         <?php
           $thumbnail_id = get_post_thumbnail_id();
@@ -32,14 +29,14 @@
           <p class="text-gray-700 text-sm text-justify">
             <?php
               $ex = esc_html(get_the_excerpt());
-              $max_letters = 240;
+              $max_letters = 260;
               echo strlen($ex) > $max_letters ? substr($ex, 0, $max_letters)."..." : $ex;
             ?>
           </p>
         </div>
-        <div class="inline-flex flex-wrap">
+        {{-- <div class="inline-flex flex-wrap">
           <?php
-            $posttags = array_slice(get_the_tags(), 0, 4);
+            #$posttags = array_slice(get_the_tags(), 0, 4);
           ?>
             @if($posttags)
               @foreach($posttags as $tag)
@@ -49,7 +46,7 @@
                 </span>
               @endforeach
             @endif
-        </div>
+        </div> --}}
       </div>
       <?php
         $categories = get_the_category();
@@ -72,21 +69,21 @@
     <div class="border-t border-gray-300 bg-gray-100 p-2 flex justify-between rounded-b-md">
       <div class="post-meta flex flex-col sm:flex-row">
         <span class="text-sm relative text-dark dark:text-black py-1 px-2 mr-3 flex items-center" title="{{ __('Author', 'tb') }}">
-          @include('icon::user', ['classes' => 'mr-3 h-4 w-4 flex-shrink-0'])
+          <span class="sm:hidden lg:inline">@include('icon::user', ['classes' => 'mr-3 h-4 w-4 flex-shrink-0'])</span>
           {{ get_the_author() }}
         </span>
         <time datetime="{{ get_post_time('c', true) }}" class="text-sm relative text-dark dark:text-black py-1 px-2 mr-3 flex items-center" title="{{ __('Date', 'tb') }}">
-          @include('icon::date', ['classes' => 'mr-3 h-4 w-4 flex-shrink-0'])
+          <span class="sm:hidden lg:inline">@include('icon::date', ['classes' => 'mr-3 h-4 w-4 flex-shrink-0'])</span>
           {{ get_the_date() }}
         </time>
         <span class="text-sm relative text-dark dark:text-black py-1 px-2 mr-3 flex items-center" title="{{ __('Read time', 'tb') }}">
-          @include('icon::clock', ['classes' => 'mr-3 h-4 w-4 flex-shrink-0'])
+          <span class="sm:hidden lg:inline">@include('icon::clock', ['classes' => 'mr-3 h-4 w-4 flex-shrink-0'])</span>
           {{ $read_time }}
         </span>
         @if($is_translated)
           <span class="text-sm relative text-dark dark:text-black py-1 px-2 flex items-center">
             @include('icon::flags.pl', ['classes' => 'mr-3 h-4 w-5 flex-shrink-0 border border-gray-400'])
-            {{ __('Available only in Polish', 'tb') }}
+            <span class="sm:hidden lg:inline">{{ __('Available only in Polish', 'tb') }}</span>
           </span>
         @endif
       </div>

@@ -13,6 +13,7 @@
       </button>
     </div>
     <div
+      x-cloak
       x-show="languageOpen"
       @click.away="languageOpen = false"
       x-transition:enter="transition ease-out duration-100"

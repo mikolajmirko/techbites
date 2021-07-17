@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tasty bites 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/techbites\n"
-"POT-Creation-Date: 2021-06-23T12:47:26+00:00\n"
-"PO-Revision-Date: 2021-06-23 14:47+0200\n"
+"POT-Creation-Date: 2021-07-17T16:33:38+00:00\n"
+"PO-Revision-Date: 2021-07-17 18:46+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -48,7 +48,7 @@ msgstr "Nawigacja Odkrywaj"
 msgid "Bottom Navigation"
 msgstr "Nawigacja dolna"
 
-#: app/View/Composers/Post.php:60
+#: app/View/Composers/Post.php:60 yarpp-template-techbites.php:73
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "minuta"
@@ -91,9 +91,9 @@ msgid "Page"
 msgstr "Strona"
 
 #: resources/views/components/post-card.blade.php:19
-#: resources/views/partials/content.blade.php:22
+#: resources/views/partials/content.blade.php:19
 #: storage/framework/views/725af73dd387f504a20fb239ee36a0a7d7ed5bb7.php:19
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:22
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:19
 #: yarpp-template-techbites.php:32
 msgid "Bite thumbnail"
 msgstr "Obrazek wyróżniający gryzka"
@@ -151,20 +151,22 @@ msgstr "Ikona osoby"
 
 #: storage/framework/views/08b78898f5c1fbe6a94d22bd9bec95f6613610a5.php:2
 #: storage/framework/views/725af73dd387f504a20fb239ee36a0a7d7ed5bb7.php:29
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:75
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:59
 #: yarpp-template-techbites.php:49
 msgid "Author"
 msgstr "Autor"
 
 #: storage/framework/views/08b78898f5c1fbe6a94d22bd9bec95f6613610a5.php:4
 #: storage/framework/views/725af73dd387f504a20fb239ee36a0a7d7ed5bb7.php:34
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:80
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:64
 #: yarpp-template-techbites.php:56
 msgid "Date"
 msgstr "Data dodania"
 
 #: storage/framework/views/08b78898f5c1fbe6a94d22bd9bec95f6613610a5.php:6
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:85
+#: storage/framework/views/725af73dd387f504a20fb239ee36a0a7d7ed5bb7.php:39
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:69
+#: yarpp-template-techbites.php:63
 msgid "Read time"
 msgstr "Czas czytania"
 
@@ -184,7 +186,7 @@ msgstr "Szukaj..."
 #: storage/framework/views/094ae7a91e11794684c197f16478d8df5d7e7c28.php:31
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:12
 msgid "Advanced search"
-msgstr "Zaawansowane wyszukiwanie"
+msgstr "Przeglądaj cały katalog"
 
 #: storage/framework/views/1b04293a5d5f09d9d1abb98a4d7b1e5be2b19059.php:3
 #: storage/framework/views/82bb4796022e376248677e1f46a42410cf9a05e5.php:8
@@ -215,8 +217,8 @@ msgstr "Odkryj proces wytwórczy"
 #: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:13
 msgid "Every phase of the development process can improve user experience."
 msgstr ""
-"Każdy etap procesu kryje w sobie potencjał na rozwój dostępności i "
-"użyteczności."
+"Każdy etap procesu kryje w sobie potencjał na rozwój dostępności "
+"i użyteczności."
 
 #: storage/framework/views/6b452df2e61f8680e12f0ca458cec8dd3b89438b.php:24
 #: storage/framework/views/834b8c5ee14a49be89ba45c8f010404ff0048cad.php:88
@@ -254,7 +256,7 @@ msgstr "Ikona żarówki"
 
 #: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:15
 msgid "Showing"
-msgstr "Wyświetlanie"
+msgstr "Znaleziono"
 
 #: storage/framework/views/7e77424f49548e6ecae2141ada86c92653ddf182.php:15
 msgid "of"
@@ -281,10 +283,10 @@ msgstr "Technologia nie gryzie"
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:3
 msgid ""
-"Discover and share knowledge about software usability, technology "
-"availability and interesting sources of resources."
+"Discover valuable knowledge about software usability, technology "
+"accessibility and interesting sources."
 msgstr ""
-"Odkrywaj i dziel się wiedzą o użyteczności oprogramowania, dostępności "
+"Odkrywaj wartościową wiedzę o użyteczności oprogramowania, dostępności "
 "technologii oraz ciekawych źródłach zasobów."
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:41
@@ -298,11 +300,11 @@ msgstr "Katalog gryzków"
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:68
 msgid ""
-"Search among dozens of bites containing rich and detailed knowledge in the "
+"Search among dozens of bites containing rich and detailed knowledge from the "
 "field of IT product development."
 msgstr ""
-"Szukaj wśród dziesiątek gryzków zawierających bogatą i sprawdzoną wiedzę z "
-"dziedziny wytwarzania produktów IT."
+"Szukaj wśród dziesiątek gryzków zawierających bogatą i sprawdzoną wiedzę "
+"z dziedziny wytwarzania produktów IT."
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:81
 msgid "Our goal"
@@ -311,12 +313,10 @@ msgstr "Nasz cel"
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:81
 msgid ""
 "We hope to popularize the concepts of usability and accessibility in IT "
-"projects and change the belief that if something is aesthetic it must be "
-"inaccessible."
+"projects and highlight their importance."
 msgstr ""
-"Pragniemy spopularyzować pojęcia użyteczności i dostępności w projektach IT "
-"i odmienić przekonanie, że jeśli coś jest estetyczne to nie może być "
-"dostępne."
+"Pragniemy spopularyzować pojęcia użyteczności i dostępności w projektach IT "
+"oraz podkreślić ich istotną rolę."
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:94
 msgid "We have a small problem"
@@ -325,17 +325,18 @@ msgstr "Mamy mały problem"
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:94
 msgid ""
 "Sorry, this bite has no translation in selected language. Try a different "
-"one or search for other bites."
+"one, search for other bites, or try understanding it in this weird language "
+"below."
 msgstr ""
-"Then gryzek nie posiada tłumaczenia w wybranym języku. Zmień go na inny lub "
-"wyszukaj inne gryzki."
+"Ten gryzek nie posiada tłumaczenia w wybranym języku. Zmień go na inny lub "
+"wyszukaj inne gryzki. Poniżej znajduje się oryginalna wersja gryzka."
 
 #: storage/framework/views/32e941c3ee5d4ec9f36d81de8ff79446b271acff.php:107
 msgid ""
 "Someone was very hungry and bit too much! The page you are trying to view "
 "does not exist. Use main navigation or search to discover the best bites."
 msgstr ""
-"Ktoś był wyjątkowo głodny i ugryzł za dużo! Strona, którą próbujesz "
+"Ktoś był wyjątkowo głodny i ugryzł za dużo! Strona, którą próbujesz "
 "wyświetlić nie istnieje. Użyj nawigacji lub wyszukiwarki, aby odkryć inne "
 "interesujące gryzki."
 
@@ -346,7 +347,6 @@ msgstr "Strona główna"
 
 #: storage/framework/views/53e1736f15179357d1c8e37c6e7cf0ab2eaa919a.php:8
 #: storage/framework/views/53323d0a7a69bd7fd7e9f956af79f1507e380375.php:3
-#: storage/framework/views/c2ea43443fbe8d3a65ce87280f7c0e4a868cda73.php:8
 msgid "Comment icon"
 msgstr "Ikona komentarza"
 
@@ -455,7 +455,6 @@ msgstr "Wyłączony"
 
 #: storage/framework/views/8967b3da19a7fd191bede14edb1cf863a119eeab.php:5
 #: storage/framework/views/768805d162bea31a4bffd504e6ad51ac5ba8d7e0.php:8
-#: storage/framework/views/c2b56cae7ecab2528fb753b160385737b7329363.php:8
 msgid "Compass icon"
 msgstr "Ikona kompasu"
 
@@ -477,6 +476,7 @@ msgid "Sharing information through technology"
 msgstr "Dzielenie się wiedzą za pomocą technologii"
 
 #: storage/framework/views/ab3f4b1d3353cf38286e81385fdc85c574b646d7.php:4
+#: yarpp-template-techbites.php:67
 msgid "Clock icon"
 msgstr "Ikona zegarka"
 
@@ -499,11 +499,6 @@ msgstr "Ikona kontrastu"
 #: storage/framework/views/ca1189a81fea40b70778408f3ecc6405bc6ad459.php:3
 msgid "Menu icon"
 msgstr "Ikona menu"
-
-#: storage/framework/views/cd18903717e22835043cdd11ad0318639fa30802.php:5
-#: yarpp-template-techbites.php:42
-msgid "No image"
-msgstr "Brak obrazka"
 
 #: storage/framework/views/cf7dc09fba2a30ce5cc92a05906023fa8dc7c2c6.php:3
 #: yarpp-template-techbites.php:59
@@ -528,11 +523,11 @@ msgstr "Flaga UK"
 msgid "Skip to content"
 msgstr "Przejdź do treści"
 
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:93
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:77
 msgid "Available only in Polish"
 msgstr "Dostępne tylko w języku Polskim"
 
-#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:99
+#: storage/framework/views/eadfc51fd43b2f266fafe1bf5da1c008a5c0598c.php:82
 msgid "Read more"
 msgstr "Czytaj więcej"
 
@@ -545,7 +540,7 @@ msgid "Searching"
 msgstr "Wyszukiwanie"
 
 #: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:25
-msgid "Searched phrase "
+msgid "Searched phrase"
 msgstr "Wyszukiwana fraza"
 
 #: storage/framework/views/f56ed673648184feb04e186f2ac7e8a0ad963b7a.php:28
@@ -583,6 +578,10 @@ msgstr "Szukaj"
 #: yarpp-template-techbites.php:11
 msgid "Related bites"
 msgstr "Powiązane gryzki"
+
+#: yarpp-template-techbites.php:42
+msgid "No image"
+msgstr "Brak obrazka"
 
 #~ msgid "Continued"
 #~ msgstr "Więcej"

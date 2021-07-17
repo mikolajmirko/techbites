@@ -50,7 +50,7 @@
                     <label for="tag-{{ $tag->slug }}" class="cursor-pointer rounded-xl text-sm relative bg-white text-dark hover:bg-gray-200 py-1 px-2 pr-4 mb-2 mr-2 flex items-center select-none focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-dark focus-within:ring-offset-2 focus-within:ring-white dark:focus-within:ring-accent" tabindex="-1">
                       <input type="checkbox" id="tag-{{ $tag->slug }}" value="{{ $tag->slug }}" class="opacity-0 absolute" <?= ($is_selected) ? 'checked' : '' ?>>
                       @include('icon::hash', ['classes' => 'mr-2 h-4 w-4 flex-shrink-0'])
-                      <span class="">{{ $tag->name }}</span>
+                      <span>{{ $tag->name }}</span>
                     </label>
                   <?php
                 }
@@ -61,7 +61,7 @@
           </div>
         </div>
         <input type="hidden" name="tag" value="<?php echo $_GET['tag'] ?? ''; ?>" />
-        <div class="search_sort_section mb-6">
+        {{-- <div class="search_sort_section mb-6">
           <div class="grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
             <?php
               $selectedOrderBy = $_GET['orderby'] ?? 'date';
@@ -83,7 +83,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
       <button type="submit" class="flex w-full h-12 justify-center items-center shadow-md rounded-md text-white bg-primary dark:bg-accent hover:dark dark:hover:bg-accent focus:outline-none focus:ring-2 focus:ring-offset-dark focus:ring-offset-2 focus:ring-white dark:focus:ring-accent" aria-label="{{{ __('Search...', 'tb') }}}">
         @include('icon::search', ['classes' => 'h-6 w-6 mr-2']) {{ __('Search') }}
       </button>

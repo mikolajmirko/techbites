@@ -2,12 +2,16 @@
   @apply text-white bg-accent;
 }
 
+[x-cloak] {
+  display: none !important;
+}
+
 body {
   @apply font-sans bg-light;
-  &.single article .post-content a {
+  &.single article .post-content a, &.page article .post-content a {
     @apply text-primary hover:text-blue-600 underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1 rounded-sm;
   }
-  &.single.dark article .post-content a {
+  &.single.dark article .post-content a, &.page.dark article .post-content a {
     @apply text-accent hover:text-pink-600 focus:ring-accent;
   }
   a.bite-card {

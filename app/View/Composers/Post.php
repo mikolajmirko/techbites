@@ -41,8 +41,8 @@ class Post extends Composer
      */
     public function is_translated() {
         global $sublanguage;
-        if(!is_home() && !is_404() && !is_category()) {
-            return empty($sublanguage->get_post_field_translation(get_post(), 'post_title', $sublanguage->current_language));
+        if(!is_404()) {
+            return empty(trim($sublanguage->get_post_field_translation(get_post(get_the_ID()), 'post_content', $sublanguage->current_language)));
         } else {
             return false;
         }

@@ -21,7 +21,7 @@
       </div>
       <div x-data="openDiagramDialogLink()" x-on:resize.window="resizeUpdate" class="w-full lg:w-96 flex-shrink-0 order-1 lg:order-2 relative">
         @include('graphic::diagram', ['classes' => 'h-80 w-auto lg:h-96 mx-auto mb-6 lg:mb-0 overflow-visible'])
-        <div x-show="openDiagramModal" x-on:click.away="close" class="bg-white absolute w-full z-10 top-0 transform origin-top translate-y-1/4 shadow-2xl rounded-md p-4" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
+        <div x-cloak x-show="openDiagramModal" x-on:click.away="close" class="bg-white absolute w-full z-10 top-0 transform origin-top translate-y-1/4 shadow-2xl rounded-md p-4" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
           <button x-on:click="close" id="closeDiagramDialogBtn" type="button" class="bg-white rounded-lg p-2 float-right inline-flex items-center justify-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 dark:focus:ring-accent" >
             <span class="sr-only">{{{ __('Close menu', 'tb') }}}</span>
             @include('icon::close', ['classes' => 'h-8 w-8'])

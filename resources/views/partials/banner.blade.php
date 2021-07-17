@@ -1,7 +1,7 @@
 @if (is_front_page())
   <x-hero
     title="{!! __('Technology doesn\'t bite', 'tb') !!}"
-    description="{{{ __('Discover and share knowledge about software usability, technology availability and interesting sources of resources.', 'tb') }}}"
+    description="{{{ __('Discover valuable knowledge about software usability, technology accessibility and interesting sources.', 'tb') }}}"
     graphic="frontpage"
   >
     <div class="w-32 h-1 bg-accent rounded-md md:mx-0 mx-auto"></div>
@@ -34,19 +34,19 @@
 @elseif (is_home())
   <x-hero
     title="{{{ __('Bite catalog', 'tb') }}}"
-    description="{{{ __('Search among dozens of bites containing rich and detailed knowledge in the field of IT product development.', 'tb') }}}"
+    description="{{{ __('Search among dozens of bites containing rich and detailed knowledge from the field of IT product development.', 'tb') }}}"
     graphic="catalog"
   />
 @elseif (is_page($about_page_id))
   <x-hero
     title="{{{ __('Our goal', 'tb') }}}"
-    description="{{{ __('We hope to popularize the concepts of usability and accessibility in IT projects and change the belief that if something is aesthetic it must be inaccessible.', 'tb') }}}"
+    description="{{{ __('We hope to popularize the concepts of usability and accessibility in IT projects and highlight their importance.', 'tb') }}}"
     graphic="about"
   />
 @elseif (is_single() && $is_translated)
   <x-hero
     title="{{{ __('We have a small problem', 'tb') }}}"
-    description="{{{ __('Sorry, this bite has no translation in selected language. Try a different one or search for other bites.', 'tb') }}}"
+    description="{{{ __('Sorry, this bite has no translation in selected language. Try a different one, search for other bites, or try understanding it in this weird language below.', 'tb') }}}"
     graphic="missing-language"
   />
 @elseif (is_404())

@@ -80,7 +80,10 @@ body.single-post, body.page {
     }
     // Quotes
     blockquote {
-      @apply border-l-4 border-dark text-xl italic font-light text-dark pl-4 my-6;
+      @apply border-l-4 border-dark italic font-light text-dark pl-4 my-6;
+      p {
+        @apply text-xl;
+      }
       cite {
         @apply text-base font-semibold text-dark mt-2 not-italic;
       }
@@ -178,6 +181,26 @@ body.single-post, body.page {
   .yarpp-related {
     a {
       font-weight: normal !important;
+    }
+  }
+}
+
+body.page {
+  .post-content {
+    p {
+      @apply text-xl font-light;
+    }
+    & > p:first-child {
+      @apply text-xl text-left font-normal mb-8;
+    }
+    blockquote {
+      @apply border-l-0;
+      p {
+        @apply border-l-0 text-4xl;
+      }
+      cite {
+        @apply text-base font-semibold text-dark mt-2 not-italic;
+      }
     }
   }
 }
