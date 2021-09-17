@@ -4,7 +4,7 @@
       <span class="sr-only">{{{ __('Search for bites', 'tb') }}}</span>
       @include('icon::search', ['classes' => 'h-6 w-6'])
     </button>
-    <div x-cloak x-show="searchOpen" @click.away="searchOpen = false" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="origin-top-right absolute z-10 mt-2 ml-5 transform w-screen max-w-md left-1/2 -translate-x-full" role="dialog" aria-labelledby="search-box">
+    <div x-cloak x-show="searchOpen" @mousedown.away="searchOpen = false" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="origin-top-right absolute z-10 mt-2 ml-5 transform w-screen max-w-md left-1/2 -translate-x-full" role="dialog" aria-labelledby="search-box">
       <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden max-w-md bg-white">
         <div class="relative bg-white px-6 py-5">
 @endif

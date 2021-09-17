@@ -118,3 +118,49 @@ function tb_setting_404_callback_function() {
     <input type="text" name="tb_setting_404_post" value="<?php echo isset( $setting ) ? esc_attr( $setting ) : ''; ?>">
     <?php
 }
+
+
+// Custom OG
+add_filter( 'og_article_author_value', '__return_empty_string' );
+add_filter( 'og_profile_username_value', '__return_empty_string' );
+add_filter( 'og_profile_first_name_value', '__return_empty_string' );
+add_filter( 'og_profile_last_name_value', '__return_empty_string' );
+
+add_filter('og_og_title_value', 'my_og_og_title_value');
+function my_og_og_title_value($title)
+{
+    if ( is_page(94) ) {
+        return __('TechBites', 'tb');
+    }
+    return $title;
+}
+
+add_filter('og_og_description_value', 'my_og_og_description_value');
+function my_og_og_description_value($title)
+{
+    if ( is_page(94) ) {
+        return __('Discover valuable knowledge about software usability, technology accessibility and interesting sources.', 'tb');
+    }
+    return $title;
+}
+
+add_filter('og_og_type_value', 'my_og_og_type_value');
+function my_og_og_type_value($type)
+{
+    if ( is_page(94) ) {
+        return 'website';
+    }
+    return $type;
+}
+
+add_filter('og_og_image_value', 'my_og_image_value');
+function my_og_image_value($image)
+{
+    if ( is_page() || is_category() ) {
+        return 'http://techbites.pl/wp-content/uploads/2021/07/image_default.png';
+    }
+    return $image;
+}
+
+// Disable basic sitemaps
+add_filter( 'wp_sitemaps_enabled', '__return_false' );

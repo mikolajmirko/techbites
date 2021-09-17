@@ -1,5 +1,5 @@
 <div class="w-full bg-dark">
-  @include('graphic::wave', ['classes' => 'transform rotate-180'])
+  @include('graphic::wave', ['classes' => 'transform rotate-180 -mt-1'])
   <footer class="max-w-7xl mx-auto px-4 sm:px-6 py-8" aria-label="{{{ __('Website footer', 'tb') }}}">
     <img class="h-12 w-auto mx-auto" src="@asset('images/logo.svg')" alt="{{ __('Portal logo', 'tb') }}">
     @if (has_nav_menu('bottom_navigation'))

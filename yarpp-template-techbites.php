@@ -13,38 +13,40 @@ Author: Mikołaj Mirko
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     <?php while (have_posts()) : the_post(); ?>
         <a href="<?php echo get_permalink(); ?>" alt="<?php echo get_the_title(); ?>" title="<?php echo get_the_title(); ?>" class="bite-card rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-accent">
-            <article class="h-full flex flex-col rounded-md">
-                <div class="post-thumbnail h-56 bg-cover bg-center rounded-md overflow-hidden">
-                    <?php if (get_the_post_thumbnail_url()) :
-                        $thumbnail_id = get_post_thumbnail_id();
-                        $thumbnail = get_post($thumbnail_id);
-                        $thumbnail_alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+            <article class="h-full flex flex-col justify-between rounded-md">
+                <div>
+                    <div class="post-thumbnail h-56 bg-cover bg-center rounded-md overflow-hidden">
+                        <?php if (get_the_post_thumbnail_url()) :
+                            $thumbnail_id = get_post_thumbnail_id();
+                            $thumbnail = get_post($thumbnail_id);
+                            $thumbnail_alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 
-                        if(!empty($thumbnail_alt)) {
-                            $thumbnail_title = $thumbnail_alt;
-                        } elseif(!empty($thumbnail->post_title)) {
-                            $thumbnail_title = $thumbnail->post_title;
-                        } elseif(!empty($thumbnail->post_excerpt)) {
-                            $thumbnail_title = $thumbnail->post_excerpt;
-                        } elseif(!empty($thumbnail->post_content)) {
-                            $thumbnail_title = $thumbnail->post_content;
-                        } else {
-                            $thumbnail_title = __('Bite thumbnail', 'tb');
-                        }
-                    ?>
-                        <div class="w-full h-full bg-gray-500 bg-cover bg-center" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')" title="<?php echo $thumbnail_title; ?>"></div>
-                    <?php else: ?>
-                        <div class="w-full h-full bg-gray-600 text-gray-300 flex justify-center align-middle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-28 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                                <polyline points="21 15 16 10 5 21"></polyline>
-                                <title><?php echo __('No image', 'tb'); ?></title>
-                            </svg>
-                        </div>
-                    <?php endif; ?>
+                            if(!empty($thumbnail_alt)) {
+                                $thumbnail_title = $thumbnail_alt;
+                            } elseif(!empty($thumbnail->post_title)) {
+                                $thumbnail_title = $thumbnail->post_title;
+                            } elseif(!empty($thumbnail->post_excerpt)) {
+                                $thumbnail_title = $thumbnail->post_excerpt;
+                            } elseif(!empty($thumbnail->post_content)) {
+                                $thumbnail_title = $thumbnail->post_content;
+                            } else {
+                                $thumbnail_title = __('Bite thumbnail', 'tb');
+                            }
+                        ?>
+                            <div class="w-full h-full bg-gray-500 bg-cover bg-center" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')" title="<?php echo $thumbnail_title; ?>"></div>
+                        <?php else: ?>
+                            <div class="w-full h-full bg-gray-600 text-gray-300 flex justify-center align-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-28 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21 15 16 10 5 21"></polyline>
+                                    <title><?php echo __('No image', 'tb'); ?></title>
+                                </svg>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                    <h2 class="text-dark flex-grow font-semibold text-xl py-1 px-2 mt-1 pb-3"><?php echo get_the_title(); ?></h2>
                 </div>
-                <h2 class="text-dark flex-grow font-semibold text-xl py-1 px-2 mt-1 pb-3"><?php echo get_the_title(); ?></h2>
                 <div class="post-meta flex flex-row py-1 flex-wrap">
                     <span class="text-xs relative text-gray-600 dark:text-dark py-1 px-2 mr-2 flex items-center" title="<?php echo __('Author', 'tb'); ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4 flex-shrink-0 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" aria-hidden="true">
